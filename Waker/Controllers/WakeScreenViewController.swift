@@ -74,19 +74,7 @@ class WakeScreenViewController: UIViewController {
     }
     
     fileprivate func bar(at position: Int) {
-//        let layer = CAShapeLayer()
         let width = view.bounds.width/3
-//        layer.path = UIBezierPath(rect: CGRect(x: CGFloat(width) * CGFloat(position), y: 0, width: width, height: view.bounds.height)).cgPath
-//        layer.fillColor = UIColor.red.cgColor
-//        view.layer.addSublayer(layer)
-//            UIView.animate(withDuration: 3, animations: {
-//                layer.transform = CATransform3DMakeScale(1, 0.5, 1)
-//                print("This is during the animation")
-//            }) { (true) in
-////                self.showStage1_2()
-//                print("This should be after")
-//            }
-
         imageView = UIImageView(frame: CGRect(x: CGFloat(width) * CGFloat(position), y: 0, width: width, height: view.bounds.height))
         imageView.backgroundColor = UIColor.red
         view.addSubview(imageView)
