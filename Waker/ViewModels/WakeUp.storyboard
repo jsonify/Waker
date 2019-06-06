@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="1x2-MR-uhW">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Wake Screen-->
+        <scene sceneID="J47-QL-XpT">
+            <objects>
+                <viewController storyboardIdentifier="WakeScreenViewController" title="Wake Screen" id="1x2-MR-uhW" customClass="WakeScreenViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="j1m-tx-vIf">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-gW-RTD" userLabel="green">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-5K-tzX">
+                                <rect key="frame" x="67" y="231" width="279" height="215"/>
+                                <connections>
+                                    <action selector="characterButtonPressed:" destination="1x2-MR-uhW" eventType="touchUpInside" id="SdL-O3-KNw"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-d0-3LS">
+                                <rect key="frame" x="67" y="231" width="241" height="215"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-Mc-dtu">
+                                <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="pJ7-Mc-dtu" secondAttribute="height" multiplier="124:121" id="di4-zD-VIl"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="BodoniSvtyTwoOSITCTT-Bold" family="Bodoni 72 Oldstyle" pointSize="31"/>
+                                <state key="normal">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="exitPressed:" destination="1x2-MR-uhW" eventType="touchUpInside" id="fms-Cs-9N5"/>
+                                </connections>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdV-NB-3xp">
+                                <rect key="frame" x="37" y="166" width="301" height="335"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-d0-ffu">
+                                        <rect key="frame" x="0.0" y="0.0" width="300" height="335"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="giftBox"/>
+                                        <connections>
+                                            <action selector="giftBoxButton:" destination="1x2-MR-uhW" eventType="touchUpInside" id="AAY-sX-ITR"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.059625256809999999" green="0.098376110200000005" blue="0.16597454249999999" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="YdV-NB-3xp" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" constant="37" id="1at-pF-Lqd"/>
+                            <constraint firstItem="YdV-NB-3xp" firstAttribute="centerX" secondItem="ICT-d0-3LS" secondAttribute="centerX" id="8Tp-HN-TGU"/>
+                            <constraint firstItem="oSD-gW-RTD" firstAttribute="top" secondItem="j1m-tx-vIf" secondAttribute="top" id="GbV-ea-gIG"/>
+                            <constraint firstItem="oSD-gW-RTD" firstAttribute="bottom" secondItem="TYm-XG-a58" secondAttribute="bottom" id="Kzy-iT-xR9"/>
+                            <constraint firstItem="TYm-XG-a58" firstAttribute="trailing" secondItem="ibc-5K-tzX" secondAttribute="trailing" constant="68" id="NYN-b7-oMG"/>
+                            <constraint firstItem="oSD-gW-RTD" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" id="VjK-6x-Eb6"/>
+                            <constraint firstItem="pJ7-Mc-dtu" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" id="Xcy-vY-Anf"/>
+                            <constraint firstItem="ICT-d0-3LS" firstAttribute="top" secondItem="ibc-5K-tzX" secondAttribute="top" id="aQp-5x-Ifw"/>
+                            <constraint firstItem="ibc-5K-tzX" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" constant="67" id="dhm-Xk-8Tv"/>
+                            <constraint firstItem="YdV-NB-3xp" firstAttribute="top" secondItem="TYm-XG-a58" secondAttribute="top" constant="102" id="hcZ-Md-Foy"/>
+                            <constraint firstItem="ICT-d0-3LS" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" constant="67" id="iEy-U1-gn4"/>
+                            <constraint firstItem="oSD-gW-RTD" firstAttribute="trailing" secondItem="TYm-XG-a58" secondAttribute="trailing" id="m8h-hP-xT3"/>
+                            <constraint firstItem="TYm-XG-a58" firstAttribute="bottom" secondItem="ICT-d0-3LS" secondAttribute="bottom" constant="221" id="mkJ-s1-VBT"/>
+                            <constraint firstItem="ICT-d0-3LS" firstAttribute="bottom" secondItem="ibc-5K-tzX" secondAttribute="bottom" id="oOg-2w-dqv"/>
+                            <constraint firstItem="ICT-d0-3LS" firstAttribute="top" secondItem="TYm-XG-a58" secondAttribute="top" constant="167" id="q2A-79-IJM"/>
+                            <constraint firstItem="pJ7-Mc-dtu" firstAttribute="top" secondItem="j1m-tx-vIf" secondAttribute="top" id="r9g-2S-RaP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="TYm-XG-a58"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="oSD-gW-RTD"/>
+                                <exclude reference="ICT-d0-3LS"/>
+                                <exclude reference="YdV-NB-3xp"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <connections>
+                        <outlet property="barsView" destination="oSD-gW-RTD" id="Grz-Y9-gBG"/>
+                        <outlet property="characterButton" destination="ibc-5K-tzX" id="HUq-sw-xfx"/>
+                        <outlet property="characterImage" destination="ICT-d0-3LS" id="HSY-Cs-dX1"/>
+                        <outlet property="exitButton" destination="pJ7-Mc-dtu" id="B4B-4O-aRA"/>
+                        <outlet property="greenWakeImage" destination="oSD-gW-RTD" id="1Bg-NX-4w3"/>
+                        <outlet property="presentImage" destination="9Da-d0-ffu" id="Bbt-t1-XMs"/>
+                        <outlet property="presentPopup" destination="YdV-NB-3xp" id="xBI-co-Yl9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cFC-xw-285" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2940" y="199.25037481259372"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="giftBox" width="300" height="335"/>
+    </resources>
+</document>

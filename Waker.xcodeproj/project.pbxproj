@@ -1,0 +1,608 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3DEDE69CADA64EC8BFCC2698 /* Pods_Waker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C7619E572CB711AC005BE4 /* Pods_Waker.framework */; };
+		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
+		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
+		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
+		965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F078B20A15ECA0044BB85 /* AppDelegate.swift */; };
+		965F079120A15ECA0044BB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F078F20A15ECA0044BB85 /* Main.storyboard */; };
+		965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F079220A15ECC0044BB85 /* Assets.xcassets */; };
+		965F079620A15ECC0044BB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */; };
+		965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079D20A172CD0044BB85 /* SettingsViewController.swift */; };
+		965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079F20A3362C0044BB85 /* ClockViewController.swift */; };
+		9663A13F20E7C30700382C0F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A13E20E7C30700382C0F /* Emitter.swift */; };
+		96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826DC222A8DA6700D846B1 /* WakeUp.storyboard */; };
+		9687A73F20C11370009469D5 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9687A73D20C11349009469D5 /* rain.mp3 */; };
+		9697E85F20DF6CFC00154925 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85320DF6CFB00154925 /* OFL.txt */; };
+		9697E86020DF6CFC00154925 /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85420DF6CFB00154925 /* VarelaRound-Regular.ttf */; };
+		9697E86120DF6CFC00154925 /* Ubuntu-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85620DF6CFC00154925 /* Ubuntu-Medium.ttf */; };
+		9697E86220DF6CFC00154925 /* Ubuntu-LightItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85720DF6CFC00154925 /* Ubuntu-LightItalic.ttf */; };
+		9697E86320DF6CFC00154925 /* Ubuntu-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85820DF6CFC00154925 /* Ubuntu-Regular.ttf */; };
+		9697E86420DF6CFC00154925 /* Ubuntu-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85920DF6CFC00154925 /* Ubuntu-Bold.ttf */; };
+		9697E86520DF6CFC00154925 /* Ubuntu-MediumItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85A20DF6CFC00154925 /* Ubuntu-MediumItalic.ttf */; };
+		9697E86620DF6CFC00154925 /* Ubuntu-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85B20DF6CFC00154925 /* Ubuntu-BoldItalic.ttf */; };
+		9697E86720DF6CFC00154925 /* Ubuntu-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85C20DF6CFC00154925 /* Ubuntu-Italic.ttf */; };
+		9697E86820DF6CFC00154925 /* Ubuntu-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85D20DF6CFC00154925 /* Ubuntu-Light.ttf */; };
+		9697E86920DF6CFC00154925 /* UFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85E20DF6CFC00154925 /* UFL.txt */; };
+		969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B955020EBB09500973AC1 /* OnboardingView.swift */; };
+		969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B955220EBB17900973AC1 /* OnboardingViewController.swift */; };
+		969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E63A520BD178300E0F487 /* WakeScreenViewController.swift */; };
+		969E86D320F1657F00454C83 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D220F1657F00454C83 /* Helper.swift */; };
+		969E86D620F1DF4300454C83 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D520F1DF4300454C83 /* UserViewModel.swift */; };
+		969E86D820F332E500454C83 /* WakeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D720F332E500454C83 /* WakeUpViewController.swift */; };
+		96A1BC4520C8169A0029A5CD /* SettingsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BC4420C8169A0029A5CD /* SettingsTools.swift */; };
+		96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		70C7619E572CB711AC005BE4 /* Pods_Waker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		767078226DF03B3993B53F2B /* Pods-Waker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.release.xcconfig"; sourceTree = "<group>"; };
+		7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.debug.xcconfig"; sourceTree = "<group>"; };
+		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
+		963346F020BB63BD00EEC072 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
+		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
+		965F078820A15ECA0044BB85 /* Waker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		965F078B20A15ECA0044BB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		965F079020A15ECA0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		965F079220A15ECC0044BB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		965F079520A15ECC0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		965F079720A15ECC0044BB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		965F079D20A172CD0044BB85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		965F079F20A3362C0044BB85 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
+		9663A13E20E7C30700382C0F /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
+		96826DC222A8DA6700D846B1 /* WakeUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WakeUp.storyboard; sourceTree = "<group>"; };
+		9687A73D20C11349009469D5 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
+		9697E85320DF6CFB00154925 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
+		9697E85420DF6CFB00154925 /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
+		9697E85620DF6CFC00154925 /* Ubuntu-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Medium.ttf"; sourceTree = "<group>"; };
+		9697E85720DF6CFC00154925 /* Ubuntu-LightItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-LightItalic.ttf"; sourceTree = "<group>"; };
+		9697E85820DF6CFC00154925 /* Ubuntu-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Regular.ttf"; sourceTree = "<group>"; };
+		9697E85920DF6CFC00154925 /* Ubuntu-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Bold.ttf"; sourceTree = "<group>"; };
+		9697E85A20DF6CFC00154925 /* Ubuntu-MediumItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-MediumItalic.ttf"; sourceTree = "<group>"; };
+		9697E85B20DF6CFC00154925 /* Ubuntu-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9697E85C20DF6CFC00154925 /* Ubuntu-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Italic.ttf"; sourceTree = "<group>"; };
+		9697E85D20DF6CFC00154925 /* Ubuntu-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Ubuntu-Light.ttf"; sourceTree = "<group>"; };
+		9697E85E20DF6CFC00154925 /* UFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = UFL.txt; sourceTree = "<group>"; };
+		969B955020EBB09500973AC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		969B955220EBB17900973AC1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		969E63A520BD178300E0F487 /* WakeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeScreenViewController.swift; sourceTree = "<group>"; };
+		969E86D220F1657F00454C83 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
+		969E86D520F1DF4300454C83 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		969E86D720F332E500454C83 /* WakeUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpViewController.swift; sourceTree = "<group>"; };
+		96A1BC4420C8169A0029A5CD /* SettingsTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTools.swift; sourceTree = "<group>"; };
+		96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		965F078520A15ECA0044BB85 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3DEDE69CADA64EC8BFCC2698 /* Pods_Waker.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		36CACC2A15F0A83C123A227C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				70C7619E572CB711AC005BE4 /* Pods_Waker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		964917CC20DAFE7900A8D7B3 /* IBDesignables */ = {
+			isa = PBXGroup;
+			children = (
+				964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */,
+			);
+			path = IBDesignables;
+			sourceTree = "<group>";
+		};
+		965F077F20A15ECA0044BB85 = {
+			isa = PBXGroup;
+			children = (
+				965F078A20A15ECA0044BB85 /* Waker */,
+				965F078920A15ECA0044BB85 /* Products */,
+				BABE7F3564831D88D77C79DC /* Pods */,
+				36CACC2A15F0A83C123A227C /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		965F078920A15ECA0044BB85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				965F078820A15ECA0044BB85 /* Waker.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		965F078A20A15ECA0044BB85 /* Waker */ = {
+			isa = PBXGroup;
+			children = (
+				969E86D420F1DF2A00454C83 /* ViewModels */,
+				965F07A320A3383B0044BB85 /* Application */,
+				965F07A720A33A600044BB85 /* Controllers */,
+				965F07A620A3387B0044BB85 /* Resources */,
+				965F078F20A15ECA0044BB85 /* Main.storyboard */,
+				965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */,
+				965F079720A15ECC0044BB85 /* Info.plist */,
+			);
+			path = Waker;
+			sourceTree = "<group>";
+		};
+		965F07A320A3383B0044BB85 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				965F078B20A15ECA0044BB85 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		965F07A620A3387B0044BB85 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				964917CC20DAFE7900A8D7B3 /* IBDesignables */,
+				9697E85120DF6C9700154925 /* Fonts */,
+				9687A73E20C1134F009469D5 /* Sounds */,
+				965F079220A15ECC0044BB85 /* Assets.xcassets */,
+				9663A13E20E7C30700382C0F /* Emitter.swift */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		965F07A720A33A600044BB85 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				965F079F20A3362C0044BB85 /* ClockViewController.swift */,
+				965F079D20A172CD0044BB85 /* SettingsViewController.swift */,
+				963346F020BB63BD00EEC072 /* DatePopupViewController.swift */,
+				969E63A520BD178300E0F487 /* WakeScreenViewController.swift */,
+				96A1BC4420C8169A0029A5CD /* SettingsTools.swift */,
+				96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */,
+				961CDEAF20E351E50093158D /* NavigationViewController.swift */,
+				969B955020EBB09500973AC1 /* OnboardingView.swift */,
+				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
+				969E86D220F1657F00454C83 /* Helper.swift */,
+				969E86D720F332E500454C83 /* WakeUpViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		9687A73E20C1134F009469D5 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				9687A73D20C11349009469D5 /* rain.mp3 */,
+			);
+			path = Sounds;
+			sourceTree = "<group>";
+		};
+		9697E85120DF6C9700154925 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9697E85520DF6CFC00154925 /* Ubuntu */,
+				9697E85220DF6CFB00154925 /* Varela_Round */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		9697E85220DF6CFB00154925 /* Varela_Round */ = {
+			isa = PBXGroup;
+			children = (
+				9697E85320DF6CFB00154925 /* OFL.txt */,
+				9697E85420DF6CFB00154925 /* VarelaRound-Regular.ttf */,
+			);
+			path = Varela_Round;
+			sourceTree = "<group>";
+		};
+		9697E85520DF6CFC00154925 /* Ubuntu */ = {
+			isa = PBXGroup;
+			children = (
+				9697E85620DF6CFC00154925 /* Ubuntu-Medium.ttf */,
+				9697E85720DF6CFC00154925 /* Ubuntu-LightItalic.ttf */,
+				9697E85820DF6CFC00154925 /* Ubuntu-Regular.ttf */,
+				9697E85920DF6CFC00154925 /* Ubuntu-Bold.ttf */,
+				9697E85A20DF6CFC00154925 /* Ubuntu-MediumItalic.ttf */,
+				9697E85B20DF6CFC00154925 /* Ubuntu-BoldItalic.ttf */,
+				9697E85C20DF6CFC00154925 /* Ubuntu-Italic.ttf */,
+				9697E85D20DF6CFC00154925 /* Ubuntu-Light.ttf */,
+				9697E85E20DF6CFC00154925 /* UFL.txt */,
+			);
+			path = Ubuntu;
+			sourceTree = "<group>";
+		};
+		969E86D420F1DF2A00454C83 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				96826DC222A8DA6700D846B1 /* WakeUp.storyboard */,
+				969E86D520F1DF4300454C83 /* UserViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		BABE7F3564831D88D77C79DC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */,
+				767078226DF03B3993B53F2B /* Pods-Waker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		965F078720A15ECA0044BB85 /* Waker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 965F079A20A15ECC0044BB85 /* Build configuration list for PBXNativeTarget "Waker" */;
+			buildPhases = (
+				102FDFAF90D5515439E491D4 /* [CP] Check Pods Manifest.lock */,
+				965F078420A15ECA0044BB85 /* Sources */,
+				965F078520A15ECA0044BB85 /* Frameworks */,
+				965F078620A15ECA0044BB85 /* Resources */,
+				37F78BDE2B5D9A50D7D5FAA3 /* [CP] Embed Pods Frameworks */,
+				969E86B320EF3C3900454C83 /* Increment Build */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Waker;
+			productName = Waker;
+			productReference = 965F078820A15ECA0044BB85 /* Waker.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		965F078020A15ECA0044BB85 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0930;
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "Jason Rueckert";
+				TargetAttributes = {
+					965F078720A15ECA0044BB85 = {
+						CreatedOnToolsVersion = 9.3;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 0;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 965F078320A15ECA0044BB85 /* Build configuration list for PBXProject "Waker" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 965F077F20A15ECA0044BB85;
+			productRefGroup = 965F078920A15ECA0044BB85 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				965F078720A15ECA0044BB85 /* Waker */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		965F078620A15ECA0044BB85 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9697E86420DF6CFC00154925 /* Ubuntu-Bold.ttf in Resources */,
+				9697E86220DF6CFC00154925 /* Ubuntu-LightItalic.ttf in Resources */,
+				9697E86820DF6CFC00154925 /* Ubuntu-Light.ttf in Resources */,
+				9697E85F20DF6CFC00154925 /* OFL.txt in Resources */,
+				9697E86720DF6CFC00154925 /* Ubuntu-Italic.ttf in Resources */,
+				96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */,
+				9687A73F20C11370009469D5 /* rain.mp3 in Resources */,
+				9697E86920DF6CFC00154925 /* UFL.txt in Resources */,
+				9697E86120DF6CFC00154925 /* Ubuntu-Medium.ttf in Resources */,
+				965F079620A15ECC0044BB85 /* LaunchScreen.storyboard in Resources */,
+				965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */,
+				9697E86320DF6CFC00154925 /* Ubuntu-Regular.ttf in Resources */,
+				9697E86620DF6CFC00154925 /* Ubuntu-BoldItalic.ttf in Resources */,
+				965F079120A15ECA0044BB85 /* Main.storyboard in Resources */,
+				9697E86020DF6CFC00154925 /* VarelaRound-Regular.ttf in Resources */,
+				9697E86520DF6CFC00154925 /* Ubuntu-MediumItalic.ttf in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		102FDFAF90D5515439E491D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Waker-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		37F78BDE2B5D9A50D7D5FAA3 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Waker/Pods-Waker-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/SwifterSwift/SwifterSwift.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftySound/SwiftySound.framework",
+				"${BUILT_PRODUCTS_DIR}/paper-onboarding/paper_onboarding.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwifterSwift.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftySound.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/paper_onboarding.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Waker/Pods-Waker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		969E86B320EF3C3900454C83 /* Increment Build */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Increment Build";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "buildNumber=$(/usr/libexec/PlistBuddy -c \"Print CFBundleVersion\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\")\nbuildNumber=$(($buildNumber + 1))\n/usr/libexec/PlistBuddy -c \"Set :CFBundleVersion $buildNumber\" \"${PROJECT_DIR}/${INFOPLIST_FILE}\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		965F078420A15ECA0044BB85 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */,
+				964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */,
+				969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */,
+				961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */,
+				965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */,
+				969E86D620F1DF4300454C83 /* UserViewModel.swift in Sources */,
+				96A1BC4520C8169A0029A5CD /* SettingsTools.swift in Sources */,
+				965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */,
+				969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */,
+				963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */,
+				969E86D820F332E500454C83 /* WakeUpViewController.swift in Sources */,
+				9663A13F20E7C30700382C0F /* Emitter.swift in Sources */,
+				969E86D320F1657F00454C83 /* Helper.swift in Sources */,
+				96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */,
+				969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		965F078F20A15ECA0044BB85 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965F079020A15ECA0044BB85 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				965F079520A15ECC0044BB85 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		965F079820A15ECC0044BB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		965F079920A15ECC0044BB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		965F079B20A15ECC0044BB85 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZD57UD8UQ;
+				INFOPLIST_FILE = Waker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsonify.Waker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		965F079C20A15ECC0044BB85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 767078226DF03B3993B53F2B /* Pods-Waker.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = TZD57UD8UQ;
+				INFOPLIST_FILE = Waker/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.jsonify.Waker;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 4.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		965F078320A15ECA0044BB85 /* Build configuration list for PBXProject "Waker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965F079820A15ECC0044BB85 /* Debug */,
+				965F079920A15ECC0044BB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		965F079A20A15ECC0044BB85 /* Build configuration list for PBXNativeTarget "Waker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				965F079B20A15ECC0044BB85 /* Debug */,
+				965F079C20A15ECC0044BB85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 965F078020A15ECA0044BB85 /* Project object */;
+}
