@@ -75,25 +75,36 @@ class WakeScreenViewController: UIViewController {
     
     fileprivate func bar(at position: Int) {
         let width = view.bounds.width
-        let height = view.bounds.width
-        imageView = UIImageView(frame: CGRect(x: CGFloat(width/3) * CGFloat(position), y: 0, width: width/3, height: height))
+        imageView = UIImageView(frame: CGRect(x: CGFloat(width/3) * CGFloat(position), y: 0, width: width/3, height: view.bounds.height))
         imageView.backgroundColor = UIColor.red
         
         view.addSubview(imageView)
         imageView.setAnchorPoint(CGPoint(x: 0, y: 0))
-        UIView.animate(withDuration: 3, delay: 0, options: .curveLinear, animations: {
-            self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
-        }) { (success) in
+        if position == 0 {
+            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
+                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
+            }) { (success) in
+                self.imageView.removeFromSuperview()
+            }
+        } else if position == 1 {
+            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
+                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
+            }) { (success) in
+                self.imageView.removeFromSuperview()
+            }
+        } else if position == 2 {
+            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
+                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
+            }) { (success) in
+                self.imageView.removeFromSuperview()
+            }
         }
     }
     
     func showStage() {
         bar(at: 0)
-        
-                    self.imageView.isHidden = true
         bar(at: 1)
         bar(at: 2)
-        
         
 //        let layer2 = CAShapeLayer()
 //        layer2.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
