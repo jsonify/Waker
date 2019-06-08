@@ -81,19 +81,7 @@ class WakeScreenViewController: UIViewController {
         view.addSubview(imageView)
         imageView.setAnchorPoint(CGPoint(x: 0, y: 0))
         if position == 0 {
-            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
-            }) { (success) in
-                self.imageView.removeFromSuperview()
-            }
-        } else if position == 1 {
-            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
-            }) { (success) in
-                self.imageView.removeFromSuperview()
-            }
-        } else if position == 2 {
-            UIView.animate(withDuration: 3, delay: preWakeDurationValuePiece * Double(position), options: .curveLinear, animations: {
+            UIView.animate(withDuration: 3, delay: 1, options: .curveLinear, animations: {
                 self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
             }) { (success) in
                 self.imageView.removeFromSuperview()
@@ -103,8 +91,8 @@ class WakeScreenViewController: UIViewController {
     
     func showStage() {
         bar(at: 0)
-        bar(at: 1)
-        bar(at: 2)
+//        bar(at: 1)
+//        bar(at: 2)
         
 //        let layer2 = CAShapeLayer()
 //        layer2.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
