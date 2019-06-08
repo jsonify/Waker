@@ -35,9 +35,7 @@
 		969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B955020EBB09500973AC1 /* OnboardingView.swift */; };
 		969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969B955220EBB17900973AC1 /* OnboardingViewController.swift */; };
 		969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E63A520BD178300E0F487 /* WakeScreenViewController.swift */; };
-		969E86D320F1657F00454C83 /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D220F1657F00454C83 /* Helper.swift */; };
 		969E86D620F1DF4300454C83 /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D520F1DF4300454C83 /* UserViewModel.swift */; };
-		969E86D820F332E500454C83 /* WakeUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 969E86D720F332E500454C83 /* WakeUpViewController.swift */; };
 		96A1BC4520C8169A0029A5CD /* SettingsTools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96A1BC4420C8169A0029A5CD /* SettingsTools.swift */; };
 		96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */; };
 /* End PBXBuildFile section */
@@ -75,9 +73,7 @@
 		969B955020EBB09500973AC1 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		969B955220EBB17900973AC1 /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
 		969E63A520BD178300E0F487 /* WakeScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeScreenViewController.swift; sourceTree = "<group>"; };
-		969E86D220F1657F00454C83 /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Helper.swift; sourceTree = "<group>"; };
 		969E86D520F1DF4300454C83 /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
-		969E86D720F332E500454C83 /* WakeUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WakeUpViewController.swift; sourceTree = "<group>"; };
 		96A1BC4420C8169A0029A5CD /* SettingsTools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTools.swift; sourceTree = "<group>"; };
 		96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -175,8 +171,6 @@
 				961CDEAF20E351E50093158D /* NavigationViewController.swift */,
 				969B955020EBB09500973AC1 /* OnboardingView.swift */,
 				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
-				969E86D220F1657F00454C83 /* Helper.swift */,
-				969E86D720F332E500454C83 /* WakeUpViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -409,9 +403,7 @@
 				965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */,
 				969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */,
 				963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */,
-				969E86D820F332E500454C83 /* WakeUpViewController.swift in Sources */,
 				9663A13F20E7C30700382C0F /* Emitter.swift in Sources */,
-				969E86D320F1657F00454C83 /* Helper.swift in Sources */,
 				96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */,
 				969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */,
 			);

@@ -187,16 +187,16 @@
                                                 <rect key="frame" x="0.0" y="0.0" width="377" height="180"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-W5-D7g">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="85" y="58" width="207" height="64.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBS-7j-dE1" userLabel="Wake Up Time Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M4W-Ce-WGk" userLabel="Wake Up Time Display">
-                                                                <rect key="frame" x="0.0" y="17" width="203" height="45"/>
+                                                                <rect key="frame" x="0.0" y="17.5" width="207" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="40"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -224,16 +224,16 @@
                                                 <rect key="frame" x="0.0" y="182" width="377" height="180"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m9j-e9-tb8">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="85" y="58" width="207" height="64.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreWake Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-bQ-Kur" userLabel="PreWake Timer Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Syu-Vy-sht" userLabel="Pre Wake Time Display">
-                                                                <rect key="frame" x="0.0" y="17" width="203" height="45"/>
+                                                                <rect key="frame" x="0.0" y="17.5" width="207" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="40"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -261,16 +261,16 @@
                                                 <rect key="frame" x="0.0" y="364" width="377" height="180"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-xj-1Tl">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="85" y="58" width="207" height="64.5"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Screen Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-8D-XPU" userLabel="Duration Label">
-                                                                <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="207" height="17.5"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="15"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
                                                             </label>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Click to Set" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YzK-G3-dcs" userLabel="Duration Display">
-                                                                <rect key="frame" x="0.0" y="17" width="203" height="45"/>
+                                                                <rect key="frame" x="0.0" y="17.5" width="207" height="47"/>
                                                                 <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="40"/>
                                                                 <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                                 <nil key="highlightedColor"/>
@@ -695,7 +695,7 @@
         <image name="fab" width="60" height="60"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="fPr-X6-dW9"/>
+        <segue reference="LUN-Cy-wth"/>
         <segue reference="H9Z-gB-jeK"/>
     </inferredMetricsTieBreakers>
 </document>
