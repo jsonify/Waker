@@ -390,7 +390,7 @@
         <!--WakeScreenViewController-->
         <scene sceneID="Tkx-Fn-xVT">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="WakeScreenViewController" storyboardName="WakeUp" referencedIdentifier="WakeScreenViewController" id="T7c-PG-xD8" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="WakeScreenViewController" storyboardName="WakeScreenViewController" referencedIdentifier="WakeScreenViewController" id="T7c-PG-xD8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdr-Mg-aUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2940" y="199.25037481259372"/>

@@ -19,7 +19,7 @@
 		965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079D20A172CD0044BB85 /* SettingsViewController.swift */; };
 		965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079F20A3362C0044BB85 /* ClockViewController.swift */; };
 		9663A13F20E7C30700382C0F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A13E20E7C30700382C0F /* Emitter.swift */; };
-		96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826DC222A8DA6700D846B1 /* WakeUp.storyboard */; };
+		96826DC322A8DA6700D846B1 /* WakeScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826DC222A8DA6700D846B1 /* WakeScreenViewController.storyboard */; };
 		96826DE422A9B95900D846B1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96826DE322A9B95900D846B1 /* UIViewExtension.swift */; };
 		96826E0B22AC79FB00D846B1 /* SettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826E0A22AC79FB00D846B1 /* SettingsTableViewController.storyboard */; };
 		9687A73F20C11370009469D5 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9687A73D20C11349009469D5 /* rain.mp3 */; };
@@ -59,7 +59,7 @@
 		965F079D20A172CD0044BB85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 		965F079F20A3362C0044BB85 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		9663A13E20E7C30700382C0F /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
-		96826DC222A8DA6700D846B1 /* WakeUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WakeUp.storyboard; path = ../../ViewModels/WakeUp.storyboard; sourceTree = "<group>"; };
+		96826DC222A8DA6700D846B1 /* WakeScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WakeScreenViewController.storyboard; path = ../../ViewModels/WakeScreenViewController.storyboard; sourceTree = "<group>"; };
 		96826DE322A9B95900D846B1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
 		96826E0A22AC79FB00D846B1 /* SettingsTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsTableViewController.storyboard; sourceTree = "<group>"; };
 		9687A73D20C11349009469D5 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
@@ -232,7 +232,7 @@
 		96826E0C22ACDC3900D846B1 /* WakeScreenViewController */ = {
 			isa = PBXGroup;
 			children = (
-				96826DC222A8DA6700D846B1 /* WakeUp.storyboard */,
+				96826DC222A8DA6700D846B1 /* WakeScreenViewController.storyboard */,
 				969E63A520BD178300E0F487 /* WakeScreenViewController.swift */,
 			);
 			path = WakeScreenViewController;
@@ -368,7 +368,7 @@
 				9697E86820DF6CFC00154925 /* Ubuntu-Light.ttf in Resources */,
 				9697E85F20DF6CFC00154925 /* OFL.txt in Resources */,
 				9697E86720DF6CFC00154925 /* Ubuntu-Italic.ttf in Resources */,
-				96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */,
+				96826DC322A8DA6700D846B1 /* WakeScreenViewController.storyboard in Resources */,
 				96826E0B22AC79FB00D846B1 /* SettingsTableViewController.storyboard in Resources */,
 				9687A73F20C11370009469D5 /* rain.mp3 in Resources */,
 				7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */,
