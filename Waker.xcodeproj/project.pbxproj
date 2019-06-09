@@ -13,7 +13,7 @@
 		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
 		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
 		965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F078B20A15ECA0044BB85 /* AppDelegate.swift */; };
-		965F079120A15ECA0044BB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F078F20A15ECA0044BB85 /* Main.storyboard */; };
+		965F079120A15ECA0044BB85 /* SettingsViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F078F20A15ECA0044BB85 /* SettingsViewController.storyboard */; };
 		965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F079220A15ECC0044BB85 /* Assets.xcassets */; };
 		965F079620A15ECC0044BB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */; };
 		965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079D20A172CD0044BB85 /* SettingsViewController.swift */; };
@@ -52,7 +52,7 @@
 		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		965F078820A15ECA0044BB85 /* Waker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F078B20A15ECA0044BB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		965F079020A15ECA0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		965F079020A15ECA0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/SettingsViewController.storyboard; sourceTree = "<group>"; };
 		965F079220A15ECC0044BB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965F079520A15ECC0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965F079720A15ECC0044BB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -111,6 +111,24 @@
 			path = ClockViewController;
 			sourceTree = "<group>";
 		};
+		7945CC4E22ACE58400043FDF /* SettingsViewController */ = {
+			isa = PBXGroup;
+			children = (
+				965F079D20A172CD0044BB85 /* SettingsViewController.swift */,
+				965F078F20A15ECA0044BB85 /* SettingsViewController.storyboard */,
+			);
+			path = SettingsViewController;
+			sourceTree = "<group>";
+		};
+		7945CC4F22ACE5B600043FDF /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				969B955020EBB09500973AC1 /* OnboardingView.swift */,
+				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
 		964917CC20DAFE7900A8D7B3 /* IBDesignables */ = {
 			isa = PBXGroup;
 			children = (
@@ -144,7 +162,6 @@
 				965F07A320A3383B0044BB85 /* Application */,
 				965F07A720A33A600044BB85 /* Controllers */,
 				965F07A620A3387B0044BB85 /* Resources */,
-				965F078F20A15ECA0044BB85 /* Main.storyboard */,
 				965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */,
 				965F079720A15ECC0044BB85 /* Info.plist */,
 			);
@@ -175,15 +192,14 @@
 		965F07A720A33A600044BB85 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				7945CC4F22ACE5B600043FDF /* Onboarding */,
+				7945CC4E22ACE58400043FDF /* SettingsViewController */,
 				7940444222ACE3D600483F16 /* ClockViewController */,
 				96826E0922AC79D400D846B1 /* SettingsTableViewController */,
-				965F079D20A172CD0044BB85 /* SettingsViewController.swift */,
 				963346F020BB63BD00EEC072 /* DatePopupViewController.swift */,
 				96826E0C22ACDC3900D846B1 /* WakeScreenViewController */,
 				96A1BC4420C8169A0029A5CD /* SettingsTools.swift */,
 				961CDEAF20E351E50093158D /* NavigationViewController.swift */,
-				969B955020EBB09500973AC1 /* OnboardingView.swift */,
-				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -354,7 +370,7 @@
 				965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */,
 				9697E86320DF6CFC00154925 /* Ubuntu-Regular.ttf in Resources */,
 				9697E86620DF6CFC00154925 /* Ubuntu-BoldItalic.ttf in Resources */,
-				965F079120A15ECA0044BB85 /* Main.storyboard in Resources */,
+				965F079120A15ECA0044BB85 /* SettingsViewController.storyboard in Resources */,
 				9697E86020DF6CFC00154925 /* VarelaRound-Regular.ttf in Resources */,
 				9697E86520DF6CFC00154925 /* Ubuntu-MediumItalic.ttf in Resources */,
 			);
@@ -444,12 +460,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		965F078F20A15ECA0044BB85 /* Main.storyboard */ = {
+		965F078F20A15ECA0044BB85 /* SettingsViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				965F079020A15ECA0044BB85 /* Base */,
 			);
-			name = Main.storyboard;
+			name = SettingsViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */ = {
