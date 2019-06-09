@@ -20,6 +20,7 @@
 		9663A13F20E7C30700382C0F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A13E20E7C30700382C0F /* Emitter.swift */; };
 		96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826DC222A8DA6700D846B1 /* WakeUp.storyboard */; };
 		96826DE422A9B95900D846B1 /* UIViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96826DE322A9B95900D846B1 /* UIViewExtension.swift */; };
+		96826E0B22AC79FB00D846B1 /* SettingsTableViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826E0A22AC79FB00D846B1 /* SettingsTableViewController.storyboard */; };
 		9687A73F20C11370009469D5 /* rain.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 9687A73D20C11349009469D5 /* rain.mp3 */; };
 		9697E85F20DF6CFC00154925 /* OFL.txt in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85320DF6CFB00154925 /* OFL.txt */; };
 		9697E86020DF6CFC00154925 /* VarelaRound-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9697E85420DF6CFB00154925 /* VarelaRound-Regular.ttf */; };
@@ -58,6 +59,7 @@
 		9663A13E20E7C30700382C0F /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
 		96826DC222A8DA6700D846B1 /* WakeUp.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = WakeUp.storyboard; sourceTree = "<group>"; };
 		96826DE322A9B95900D846B1 /* UIViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewExtension.swift; sourceTree = "<group>"; };
+		96826E0A22AC79FB00D846B1 /* SettingsTableViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = SettingsTableViewController.storyboard; sourceTree = "<group>"; };
 		9687A73D20C11349009469D5 /* rain.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = rain.mp3; sourceTree = "<group>"; };
 		9697E85320DF6CFB00154925 /* OFL.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = OFL.txt; sourceTree = "<group>"; };
 		9697E85420DF6CFB00154925 /* VarelaRound-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "VarelaRound-Regular.ttf"; sourceTree = "<group>"; };
@@ -162,12 +164,12 @@
 		965F07A720A33A600044BB85 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
+				96826E0922AC79D400D846B1 /* SettingsTableViewController */,
 				965F079F20A3362C0044BB85 /* ClockViewController.swift */,
 				965F079D20A172CD0044BB85 /* SettingsViewController.swift */,
 				963346F020BB63BD00EEC072 /* DatePopupViewController.swift */,
 				969E63A520BD178300E0F487 /* WakeScreenViewController.swift */,
 				96A1BC4420C8169A0029A5CD /* SettingsTools.swift */,
-				96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */,
 				961CDEAF20E351E50093158D /* NavigationViewController.swift */,
 				969B955020EBB09500973AC1 /* OnboardingView.swift */,
 				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
@@ -181,6 +183,15 @@
 				96826DE322A9B95900D846B1 /* UIViewExtension.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		96826E0922AC79D400D846B1 /* SettingsTableViewController */ = {
+			isa = PBXGroup;
+			children = (
+				96826E0A22AC79FB00D846B1 /* SettingsTableViewController.storyboard */,
+				96E7364820CE4E0200D992E3 /* SettingsTableViewController.swift */,
+			);
+			path = SettingsTableViewController;
 			sourceTree = "<group>";
 		};
 		9687A73E20C1134F009469D5 /* Sounds */ = {
@@ -315,6 +326,7 @@
 				9697E85F20DF6CFC00154925 /* OFL.txt in Resources */,
 				9697E86720DF6CFC00154925 /* Ubuntu-Italic.ttf in Resources */,
 				96826DC322A8DA6700D846B1 /* WakeUp.storyboard in Resources */,
+				96826E0B22AC79FB00D846B1 /* SettingsTableViewController.storyboard in Resources */,
 				9687A73F20C11370009469D5 /* rain.mp3 in Resources */,
 				9697E86920DF6CFC00154925 /* UFL.txt in Resources */,
 				9697E86120DF6CFC00154925 /* Ubuntu-Medium.ttf in Resources */,
