@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -20,7 +18,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="MyZ-lw-qjJ" customClass="DatePopupViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40a-tn-c5k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-I7-cVg" userLabel="Background Button">
@@ -31,7 +29,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qij-86-gNL">
-                                <rect key="frame" x="47" y="181" width="281" height="305"/>
+                                <rect key="frame" x="47" y="171" width="281" height="305"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-G0-Ka4">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="62"/>
@@ -46,9 +44,6 @@
                                     </label>
                                     <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="rbb-0b-wVU">
                                         <rect key="frame" x="0.0" y="70" width="281" height="216"/>
-                                        <date key="date" timeIntervalSinceReferenceDate="549151360.67472994">
-                                            <!--2018-05-27 22:02:40 +0000-->
-                                        </date>
                                     </datePicker>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gb2-YT-hyH">
                                         <rect key="frame" x="0.0" y="270" width="281" height="30"/>
@@ -91,68 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqS-6f-paA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2306.4000000000001" y="-533.88305847076469"/>
-        </scene>
-        <!--Clock View Controller-->
-        <scene sceneID="cFp-75-SI0">
-            <objects>
-                <viewController id="JDM-sP-DUk" customClass="ClockViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7LC-gg-uxd">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OaG-dd-ruC">
-                                <rect key="frame" x="16" y="275" width="343" height="117"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="117" id="8Q6-Yy-Ys7"/>
-                                </constraints>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="60"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                                <size key="shadowOffset" width="1" height="-1"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4Ic-f2-veZ" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
-                                <rect key="frame" x="302" y="590" width="60" height="60"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMinY="YES"/>
-                                <color key="backgroundColor" red="0.21214958640000001" green="0.92675876989999995" blue="0.71372549019999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <state key="normal" image="fab">
-                                    <color key="titleShadowColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
-                                        <real key="value" value="5"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
-                                        <color key="value" red="0.78823529410000004" green="0.15686274510000001" blue="0.24313725489999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                    </userDefinedRuntimeAttribute>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="11"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="0.72156862749999995" blue="0.19215686269999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="OaG-dd-ruC" firstAttribute="centerY" secondItem="7LC-gg-uxd" secondAttribute="centerY" id="LRQ-Wj-hkn"/>
-                            <constraint firstItem="OaG-dd-ruC" firstAttribute="leading" secondItem="UAG-QA-bNF" secondAttribute="leading" constant="16" id="McR-7o-hz5"/>
-                            <constraint firstItem="UAG-QA-bNF" firstAttribute="trailing" secondItem="OaG-dd-ruC" secondAttribute="trailing" constant="16" id="Vaz-Os-MP4"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="UAG-QA-bNF"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="4Ic-f2-veZ"/>
-                            </mask>
-                        </variation>
-                    </view>
-                    <connections>
-                        <outlet property="currentTimeLabel" destination="OaG-dd-ruC" id="5pU-rX-mne"/>
-                        <segue destination="T7c-PG-xD8" kind="show" identifier="toWakeScreenViewControllerSegue" id="1nO-A8-XBO"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="lOT-4r-u2L" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1558" y="274"/>
+            <point key="canvasLocation" x="2444" y="-766"/>
         </scene>
         <!--Wake Up Screen-->
         <scene sceneID="3lw-Fr-qh4">
@@ -174,20 +108,20 @@
             <objects>
                 <viewController title="Waker Settings" id="ZCE-SS-tmv" customClass="SettingsViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNv-Xe-eMG">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cx9-sI-909">
-                                <rect key="frame" x="0.0" y="0.0" width="377" height="672"/>
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="652"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-uE-PeI">
-                                        <rect key="frame" x="0.0" y="0.0" width="377" height="544"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="524"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-jj-HTd">
-                                                <rect key="frame" x="0.0" y="0.0" width="377" height="180"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="173.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-W5-D7g">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="55.5" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBS-7j-dE1" userLabel="Wake Up Time Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -204,7 +138,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dk-sL-unO" userLabel="Wake Up Time Button" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="-3" width="378" height="181"/>
+                                                        <rect key="frame" x="0.0" y="-3" width="378" height="174.5"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -221,10 +155,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-hM-Fgs">
-                                                <rect key="frame" x="0.0" y="182" width="377" height="180"/>
+                                                <rect key="frame" x="0.0" y="175.5" width="377" height="173"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m9j-e9-tb8">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="55.5" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreWake Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-bQ-Kur" userLabel="PreWake Timer Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -241,7 +175,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-VF-UfE" userLabel="PreWak Timer Button">
-                                                        <rect key="frame" x="0.0" y="-1" width="377" height="182"/>
+                                                        <rect key="frame" x="0.0" y="-1" width="377" height="175"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -258,10 +192,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3U-pK-Buu">
-                                                <rect key="frame" x="0.0" y="364" width="377" height="180"/>
+                                                <rect key="frame" x="0.0" y="350.5" width="377" height="173.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-xj-1Tl">
-                                                        <rect key="frame" x="87" y="59" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="56" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Screen Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-8D-XPU" userLabel="Duration Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -278,7 +212,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vi-n7-r4O" userLabel="Duration Button">
-                                                        <rect key="frame" x="1" y="4" width="376" height="179"/>
+                                                        <rect key="frame" x="1" y="4" width="376" height="172.5"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -300,7 +234,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="izL-gr-HIi">
-                                        <rect key="frame" x="0.0" y="546" width="377" height="126"/>
+                                        <rect key="frame" x="0.0" y="526" width="377" height="126"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URI-9A-O2x">
                                                 <rect key="frame" x="0.0" y="0.0" width="377" height="62"/>
@@ -363,7 +297,7 @@
                     <toolbarItems>
                         <barButtonItem systemItem="save" id="Sgb-5o-lh8">
                             <connections>
-                                <segue destination="JDM-sP-DUk" kind="show" identifier="sendDataForwards" id="YKk-EY-Mgn"/>
+                                <segue destination="BLS-nD-G2C" kind="show" identifier="sendDataForwards" id="YKk-EY-Mgn"/>
                             </connections>
                         </barButtonItem>
                     </toolbarItems>
@@ -384,7 +318,7 @@
                 <navigationController storyboardIdentifier="Mainapp" automaticallyAdjustsScrollViewInsets="NO" id="6TH-TF-gsO" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="dcC-hF-VoV">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="tintColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <textAttributes key="titleTextAttributes">
@@ -409,7 +343,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxy-m4-q6n" customClass="OnboardingView" customModule="Waker" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             </view>
                             <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67V-uk-kNK">
@@ -457,12 +391,17 @@
                 <viewControllerPlaceholder storyboardName="SettingsTableViewController" id="EK3-KF-54c" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Vhl-Di-wVH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2226" y="-976"/>
+            <point key="canvasLocation" x="2443" y="-87"/>
+        </scene>
+        <!--ClockViewController-->
+        <scene sceneID="W3h-3j-3SN">
+            <objects>
+                <viewControllerPlaceholder storyboardName="ClockViewController" id="BLS-nD-G2C" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jcL-cO-QyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1167" y="304"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="fab" width="60" height="60"/>
-    </resources>
     <inferredMetricsTieBreakers>
         <segue reference="H9Z-gB-jeK"/>
     </inferredMetricsTieBreakers>

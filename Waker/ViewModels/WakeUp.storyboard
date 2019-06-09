@@ -21,7 +21,7 @@
                             <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-gW-RTD" userLabel="green">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-5K-tzX">
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-5K-tzX">
                                 <rect key="frame" x="67" y="231" width="279" height="215"/>
                                 <connections>
                                     <action selector="characterButtonPressed:" destination="1x2-MR-uhW" eventType="touchUpInside" id="SdL-O3-KNw"/>
@@ -60,6 +60,7 @@
                         <color key="backgroundColor" red="0.059625256809999999" green="0.098376110200000005" blue="0.16597454249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
                             <constraint firstItem="YdV-NB-3xp" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" constant="37" id="1at-pF-Lqd"/>
+                            <constraint firstItem="ibc-5K-tzX" firstAttribute="top" secondItem="TYm-XG-a58" secondAttribute="top" constant="187" id="2pV-9c-awq"/>
                             <constraint firstItem="YdV-NB-3xp" firstAttribute="centerX" secondItem="ICT-d0-3LS" secondAttribute="centerX" id="8Tp-HN-TGU"/>
                             <constraint firstItem="oSD-gW-RTD" firstAttribute="top" secondItem="j1m-tx-vIf" secondAttribute="top" id="GbV-ea-gIG"/>
                             <constraint firstItem="oSD-gW-RTD" firstAttribute="bottom" secondItem="TYm-XG-a58" secondAttribute="bottom" id="Kzy-iT-xR9"/>
@@ -75,6 +76,7 @@
                             <constraint firstItem="ICT-d0-3LS" firstAttribute="bottom" secondItem="ibc-5K-tzX" secondAttribute="bottom" id="oOg-2w-dqv"/>
                             <constraint firstItem="ICT-d0-3LS" firstAttribute="top" secondItem="TYm-XG-a58" secondAttribute="top" constant="167" id="q2A-79-IJM"/>
                             <constraint firstItem="pJ7-Mc-dtu" firstAttribute="top" secondItem="j1m-tx-vIf" secondAttribute="top" id="r9g-2S-RaP"/>
+                            <constraint firstItem="TYm-XG-a58" firstAttribute="bottom" secondItem="ibc-5K-tzX" secondAttribute="bottom" constant="416" id="vRt-cf-iXG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TYm-XG-a58"/>
                         <variation key="default">
