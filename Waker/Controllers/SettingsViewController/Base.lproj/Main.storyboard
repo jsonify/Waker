@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14810.11" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6TH-TF-gsO">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -86,7 +86,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="NqS-6f-paA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2444" y="-766"/>
+            <point key="canvasLocation" x="2305" y="-564"/>
         </scene>
         <!--Wake Up Screen-->
         <scene sceneID="3lw-Fr-qh4">
@@ -107,7 +107,7 @@
         <scene sceneID="7KT-6q-cbb">
             <objects>
                 <viewController title="Waker Settings" id="ZCE-SS-tmv" customClass="SettingsViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="XNv-Xe-eMG">
+                    <view key="view" contentMode="scaleToFill" id="XNv-Xe-eMG" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -263,6 +263,11 @@
                                                         <state key="normal" title="Start &gt;">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
+                                                        <userDefinedRuntimeAttributes>
+                                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                                <real key="value" value="2"/>
+                                                            </userDefinedRuntimeAttribute>
+                                                        </userDefinedRuntimeAttributes>
                                                         <connections>
                                                             <action selector="saveButtonPressed:" destination="ZCE-SS-tmv" eventType="touchUpInside" id="8cq-HV-an7"/>
                                                         </connections>
@@ -293,6 +298,11 @@
                             <constraint firstItem="cx9-sI-909" firstAttribute="leading" secondItem="XNv-Xe-eMG" secondAttribute="leading" id="s9O-kB-8e8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2er-9f-tjp"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </view>
                     <toolbarItems>
                         <barButtonItem systemItem="save" id="Sgb-5o-lh8">
