@@ -12,6 +12,10 @@ import UIKit
 class WakeScreenViewController: UIViewController {
     
     @IBOutlet weak var barsView: UIImageView!
+    
+    // Circles
+    let shapeLayer1 = CAShapeLayer()
+    
     // Columns
     var imageView: UIImageView!
     
@@ -55,14 +59,22 @@ class WakeScreenViewController: UIViewController {
             wakeDurationValueInterval = wakeDurationValue
         }
         
+//        showStage()
+        circleTrackLayer()
+
+    }
+    
+    func circleTrackLayer() {
+        let center = view.center
         
-        
-        showStage()
-//        UIView.animate(withDuration: preWakeDurationValuePiece/12, delay: 0, options: .curveLinear, animations: {
-//            self.stage1Col1.transform = CGAffineTransform(translationX: 0, y: 667)
-//        }) { (true) in
-//            self.showStage1_2()
-//        }
+        // Create Track layer
+        let trackLayer = CAShapeLayer()
+        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
+        trackLayer.path = circularPath.cgPath
+        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.lineWidth = 10
+        trackLayer.fillColor = UIColor.clear.cgColor
+        view.layer.addSublayer(trackLayer)
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -93,25 +105,8 @@ class WakeScreenViewController: UIViewController {
         bar(at: 0)
 //        bar(at: 1)
 //        bar(at: 2)
-        
-//        let layer2 = CAShapeLayer()
-//        layer2.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
-//        layer2.fillColor = UIColor.red.cgColor
-//        view.layer.addSublayer(layer2)
-//
-//        let layer3 = CAShapeLayer()
-//        layer3.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
-//        layer3.fillColor = UIColor.red.cgColor
-//        view.layer.addSublayer(layer3)
     }
-//
-//    func showStage1_2() {
-//        UIView.animate(withDuration: preWakeDurationValuePiece/12, delay: 0, options: .curveLinear, animations: {
-//            self.stage1Col2.transform = CGAffineTransform(translationX: 0, y: 667)
-//        }) { (true) in
-//            self.showStage1_3()
-//        }
-//    }
+
     
     func WakeUpTime() {
         UIView.animate(withDuration: 0.001, delay: 5, animations: {
@@ -127,7 +122,7 @@ class WakeScreenViewController: UIViewController {
                     
                 })
                 self.presentPopup.alpha = 1
-                self.randomlyPickCharacter()
+//                self.randomlyPickCharacter()
                 
             }
             Timer.scheduledTimer(withTimeInterval: self.wakeDurationValueInterval, repeats: false, block: { (Timer) in
@@ -177,3 +172,32 @@ extension UIViewController {
         }
     }
 }
+
+
+// MARK: Old Code
+// From viewDidLoad:
+//        UIView.animate(withDuration: preWakeDurationValuePiece/12, delay: 0, options: .curveLinear, animations: {
+//            self.stage1Col1.transform = CGAffineTransform(translationX: 0, y: 667)
+//        }) { (true) in
+//            self.showStage1_2()
+//        }
+
+// From reference to the old bar system:
+    //        let layer2 = CAShapeLayer()
+    //        layer2.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
+    //        layer2.fillColor = UIColor.red.cgColor
+    //        view.layer.addSublayer(layer2)
+    //
+    //        let layer3 = CAShapeLayer()
+    //        layer3.path = UIBezierPath(rect: CGRect(x: 0, y: 0, width: view.bounds.width/3, height: view.bounds.height)).cgPath
+    //        layer3.fillColor = UIColor.red.cgColor
+    //        view.layer.addSublayer(layer3)
+
+//
+//    func showStage1_2() {
+//        UIView.animate(withDuration: preWakeDurationValuePiece/12, delay: 0, options: .curveLinear, animations: {
+//            self.stage1Col2.transform = CGAffineTransform(translationX: 0, y: 667)
+//        }) { (true) in
+//            self.showStage1_3()
+//        }
+//    }
