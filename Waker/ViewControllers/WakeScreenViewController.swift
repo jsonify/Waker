@@ -9,7 +9,25 @@
 import UIKit
 //import SwiftySound
 
-class WakeScreenViewController: UIViewController {
+class WakeScreenViewController: UIViewController, HolderViewDelegate {
+    
+    var holderView = HolderView(frame: .zero)
+    
+    func addHolderView() {
+        let boxSize: CGFloat = 100.0
+        holderView.frame = CGRect(x: view.bounds.width / 2 - boxSize / 2,
+                                  y: view.bounds.height / 2 - boxSize / 2,
+                                  width: boxSize,
+                                  height: boxSize)
+        holderView.parentFrame = view.frame
+        holderView.delegate = self
+        view.addSubview(holderView)
+        holderView.addOval()
+    }
+    
+    func animateLabel() {
+        
+    }
     
     @IBOutlet weak var barsView: UIImageView!
     
@@ -61,63 +79,8 @@ class WakeScreenViewController: UIViewController {
             wakeDurationValueInterval = wakeDurationValue
         }
         
-        //        showStage()
-        circleTrackLayer()
-        circleProgress(at: currentStage)
-        
-        
+    }
 
-        
-    }
-    
-    func circleTrackLayer() {
-        let center = self.view.center
-        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
-        
-        // Create Track layer
-        let trackLayer = CAShapeLayer()
-        
-        trackLayer.path = circularPath.cgPath
-        trackLayer.strokeColor = UIColor.lightGray.cgColor
-        trackLayer.lineWidth = 10
-        trackLayer.fillColor = UIColor.clear.cgColor
-        view.layer.addSublayer(trackLayer)
-        
-    }
-    
-    func circleProgress(at stage: Int) {
-        let center = self.view.center
-        let circularPath = UIBezierPath(arcCenter: center, radius: 100, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
-        shapeLayer1.path = circularPath.cgPath
-        if stage == 1 {
-        shapeLayer1.strokeColor = UIColor.red.cgColor
-        } else if stage == 2 {
-            shapeLayer1.strokeColor = UIColor.green.cgColor
-        }
-        shapeLayer1.lineWidth = 10
-        shapeLayer1.lineCap = kCALineCapRound
-        shapeLayer1.fillColor = UIColor.clear.cgColor
-        shapeLayer1.strokeEnd = 0
-        view.layer.addSublayer(shapeLayer1)
-        
-        circleAnimation()
-    }
-   
-    func circleAnimation() {
-        let basicAnimation = CABasicAnimation(keyPath: "strokeEnd")
-        basicAnimation.toValue = 1
-        basicAnimation.duration = preWakeDurationValuePiece/12
-//        basicAnimation.fillMode = kCAFillModeForwards
-//        basicAnimation.isRemovedOnCompletion = false
-        
-        shapeLayer1.add(basicAnimation, forKey: "urSoBasic")
-        currentStage += 1
-        
-        // Implement CATransaction Next
-        CATransaction.begin()
-        CATransaction.setAnimationDuration(0.5)
-        CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
-    }
 
 
 override func viewDidAppear(_ animated: Bool) {
@@ -125,7 +88,7 @@ override func viewDidAppear(_ animated: Bool) {
     if defaults.bool(forKey: flipModeSwitchStateKey) {
         self.view.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
     }
-    
+    addHolderView()
 }
 
 fileprivate func bar(at position: Int) {

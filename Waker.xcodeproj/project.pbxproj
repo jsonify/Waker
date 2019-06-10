@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		3DEDE69CADA64EC8BFCC2698 /* Pods_Waker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C7619E572CB711AC005BE4 /* Pods_Waker.framework */; };
 		792BD85622AE9BBA0018D428 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85522AE9BBA0018D428 /* Colors.swift */; };
+		792BD85822AECFDB0018D428 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85722AECFDB0018D428 /* HolderView.swift */; };
+		792BD85A22AEEAD10018D428 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85922AEEAD10018D428 /* OvalLayer.swift */; };
 		7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7940444322ACE3FB00483F16 /* ClockViewController.storyboard */; };
 		7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945CC5122AD462000043FDF /* RectangleLayer.swift */; };
 		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
@@ -49,6 +51,8 @@
 		767078226DF03B3993B53F2B /* Pods-Waker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.release.xcconfig"; sourceTree = "<group>"; };
 		7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.debug.xcconfig"; sourceTree = "<group>"; };
 		792BD85522AE9BBA0018D428 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		792BD85722AECFDB0018D428 /* HolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
+		792BD85922AEEAD10018D428 /* OvalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
 		7940444322ACE3FB00483F16 /* ClockViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		7945CC5122AD462000043FDF /* RectangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -290,6 +294,8 @@
 			children = (
 				969E86D520F1DF4300454C83 /* UserViewModel.swift */,
 				7945CC5122AD462000043FDF /* RectangleLayer.swift */,
+				792BD85722AECFDB0018D428 /* HolderView.swift */,
+				792BD85922AEEAD10018D428 /* OvalLayer.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -470,6 +476,8 @@
 				9663A13F20E7C30700382C0F /* Emitter.swift in Sources */,
 				96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */,
 				969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */,
+				792BD85822AECFDB0018D428 /* HolderView.swift in Sources */,
+				792BD85A22AEEAD10018D428 /* OvalLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
