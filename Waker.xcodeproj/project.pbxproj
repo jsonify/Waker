@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3DEDE69CADA64EC8BFCC2698 /* Pods_Waker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C7619E572CB711AC005BE4 /* Pods_Waker.framework */; };
+		792BD85622AE9BBA0018D428 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85522AE9BBA0018D428 /* Colors.swift */; };
 		7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7940444322ACE3FB00483F16 /* ClockViewController.storyboard */; };
-		7945CC5222AD462000043FDF /* PreWakeCircle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945CC5122AD462000043FDF /* PreWakeCircle.swift */; };
+		7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945CC5122AD462000043FDF /* RectangleLayer.swift */; };
 		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
 		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
 		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
@@ -47,8 +48,9 @@
 		70C7619E572CB711AC005BE4 /* Pods_Waker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Waker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		767078226DF03B3993B53F2B /* Pods-Waker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.release.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.release.xcconfig"; sourceTree = "<group>"; };
 		7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.debug.xcconfig"; sourceTree = "<group>"; };
+		792BD85522AE9BBA0018D428 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		7940444322ACE3FB00483F16 /* ClockViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockViewController.storyboard; sourceTree = SOURCE_ROOT; };
-		7945CC5122AD462000043FDF /* PreWakeCircle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreWakeCircle.swift; sourceTree = "<group>"; };
+		7945CC5122AD462000043FDF /* RectangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		963346F020BB63BD00EEC072 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -197,6 +199,7 @@
 				9687A73E20C1134F009469D5 /* Sounds */,
 				965F079220A15ECC0044BB85 /* Assets.xcassets */,
 				9663A13E20E7C30700382C0F /* Emitter.swift */,
+				792BD85522AE9BBA0018D428 /* Colors.swift */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -286,7 +289,7 @@
 			isa = PBXGroup;
 			children = (
 				969E86D520F1DF4300454C83 /* UserViewModel.swift */,
-				7945CC5122AD462000043FDF /* PreWakeCircle.swift */,
+				7945CC5122AD462000043FDF /* RectangleLayer.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -456,10 +459,11 @@
 				969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */,
 				961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */,
 				965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */,
-				7945CC5222AD462000043FDF /* PreWakeCircle.swift in Sources */,
+				7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */,
 				969E86D620F1DF4300454C83 /* UserViewModel.swift in Sources */,
 				96826DE422A9B95900D846B1 /* UIViewExtension.swift in Sources */,
 				96A1BC4520C8169A0029A5CD /* SettingsTools.swift in Sources */,
+				792BD85622AE9BBA0018D428 /* Colors.swift in Sources */,
 				965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */,
 				969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */,
 				963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */,

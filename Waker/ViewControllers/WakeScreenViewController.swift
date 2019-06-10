@@ -65,6 +65,9 @@ class WakeScreenViewController: UIViewController {
         circleTrackLayer()
         circleProgress(at: currentStage)
         
+        
+
+        
     }
     
     func circleTrackLayer() {
@@ -109,6 +112,11 @@ class WakeScreenViewController: UIViewController {
         
         shapeLayer1.add(basicAnimation, forKey: "urSoBasic")
         currentStage += 1
+        
+        // Implement CATransaction Next
+        CATransaction.begin()
+        CATransaction.setAnimationDuration(0.5)
+        CATransaction.setAnimationTimingFunction(CAMediaTimingFunction(name: kCAMediaTimingFunctionEaseInEaseOut))
     }
 
 
