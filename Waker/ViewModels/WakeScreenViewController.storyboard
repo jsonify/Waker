@@ -16,20 +16,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView opaque="NO" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="oSD-gW-RTD" userLabel="green">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="862"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ibc-5K-tzX">
-                                <rect key="frame" x="67" y="231" width="279" height="215"/>
-                                <connections>
-                                    <action selector="characterButtonPressed:" destination="1x2-MR-uhW" eventType="touchUpInside" id="SdL-O3-KNw"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ICT-d0-3LS">
-                                <rect key="frame" x="67" y="231" width="241" height="215"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-Mc-dtu">
                                 <rect key="frame" x="0.0" y="0.0" width="51" height="50"/>
                                 <constraints>
@@ -43,47 +29,16 @@
                                     <action selector="exitPressed:" destination="1x2-MR-uhW" eventType="touchUpInside" id="fms-Cs-9N5"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YdV-NB-3xp">
-                                <rect key="frame" x="37" y="166" width="301" height="335"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Da-d0-ffu">
-                                        <rect key="frame" x="0.0" y="0.0" width="300" height="335"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="giftBox"/>
-                                        <connections>
-                                            <action selector="giftBoxButton:" destination="1x2-MR-uhW" eventType="touchUpInside" id="AAY-sX-ITR"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                            </view>
                         </subviews>
                         <color key="backgroundColor" red="0.059625256809999999" green="0.098376110200000005" blue="0.16597454249999999" alpha="1" colorSpace="calibratedRGB"/>
                         <constraints>
-                            <constraint firstItem="ibc-5K-tzX" firstAttribute="top" secondItem="TYm-XG-a58" secondAttribute="top" constant="187" id="2pV-9c-awq"/>
-                            <constraint firstItem="TYm-XG-a58" firstAttribute="trailing" secondItem="ibc-5K-tzX" secondAttribute="trailing" constant="68" id="NYN-b7-oMG"/>
                             <constraint firstItem="pJ7-Mc-dtu" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" id="Xcy-vY-Anf"/>
-                            <constraint firstItem="ibc-5K-tzX" firstAttribute="leading" secondItem="TYm-XG-a58" secondAttribute="leading" constant="67" id="dhm-Xk-8Tv"/>
                             <constraint firstItem="pJ7-Mc-dtu" firstAttribute="top" secondItem="j1m-tx-vIf" secondAttribute="top" id="r9g-2S-RaP"/>
-                            <constraint firstItem="TYm-XG-a58" firstAttribute="bottom" secondItem="ibc-5K-tzX" secondAttribute="bottom" constant="416" id="vRt-cf-iXG"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="TYm-XG-a58"/>
-                        <variation key="default">
-                            <mask key="subviews">
-                                <exclude reference="oSD-gW-RTD"/>
-                                <exclude reference="ICT-d0-3LS"/>
-                                <exclude reference="YdV-NB-3xp"/>
-                            </mask>
-                        </variation>
                     </view>
                     <connections>
-                        <outlet property="barsView" destination="oSD-gW-RTD" id="Grz-Y9-gBG"/>
-                        <outlet property="characterButton" destination="ibc-5K-tzX" id="HUq-sw-xfx"/>
-                        <outlet property="characterImage" destination="ICT-d0-3LS" id="HSY-Cs-dX1"/>
                         <outlet property="exitButton" destination="pJ7-Mc-dtu" id="B4B-4O-aRA"/>
-                        <outlet property="greenWakeImage" destination="oSD-gW-RTD" id="1Bg-NX-4w3"/>
-                        <outlet property="presentImage" destination="9Da-d0-ffu" id="Bbt-t1-XMs"/>
-                        <outlet property="presentPopup" destination="YdV-NB-3xp" id="xBI-co-Yl9"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cFC-xw-285" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -91,7 +46,4 @@
             <point key="canvasLocation" x="2940" y="199.25037481259372"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="giftBox" width="300" height="335"/>
-    </resources>
 </document>
