@@ -34,16 +34,16 @@ class HolderView: UIView {
     
     func drawRedAnimationRectangle() {
         layer.addSublayer(redRectangleLayer)
-        redRectangleLayer.animateStrokeWithColor(color: Colors.red)
-        Timer.scheduledTimer(timeInterval: preWakeDuration, target: self, selector: #selector(drawBlueAnimationRectangle), userInfo: nil, repeats: false)
+        redRectangleLayer.animateStrokeWithColor(color: Colors.red, duration: 5.0)
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawBlueAnimationRectangle), userInfo: nil, repeats: false)
     }
     
     @objc
     func drawBlueAnimationRectangle() {
         layer.addSublayer(blueRectangleLayer)
-        blueRectangleLayer.animateStrokeWithColor(color: Colors.blue)
+        blueRectangleLayer.animateStrokeWithColor(color: Colors.blue, duration: 5.0)
         
-        Timer.scheduledTimer(timeInterval: 0.90, target: self, selector: #selector(expandView), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(expandView), userInfo: nil, repeats: false)
     }
     
     @objc
