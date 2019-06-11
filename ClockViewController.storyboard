@@ -62,7 +62,7 @@
                     </view>
                     <connections>
                         <outlet property="currentTimeLabel" destination="OaG-dd-ruC" id="5pU-rX-mne"/>
-                        <segue destination="T7c-PG-xD8" kind="show" identifier="toWakeScreenViewControllerSegue" id="1nO-A8-XBO"/>
+                        <segue destination="T7c-PG-xD8" kind="presentation" identifier="toWakeScreenViewControllerSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="1nO-A8-XBO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lOT-4r-u2L" userLabel="First Responder" sceneMemberID="firstResponder"/>

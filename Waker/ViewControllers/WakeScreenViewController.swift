@@ -12,14 +12,11 @@ import UIKit
 class WakeScreenViewController: UIViewController, HolderViewDelegate {
     
     var holderView = HolderView(frame: .zero)
-    
-    
-    
     @IBOutlet weak var barsView: UIImageView!
     
     // Circles
-    let shapeLayer1 = CAShapeLayer()
-    var currentStage = 1
+//    let shapeLayer1 = CAShapeLayer()
+//    var currentStage = 1
     
     
     // Columns
