@@ -26,7 +26,22 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
     }
     
     func animateLabel() {
+        holderView.removeFromSuperview()
+        view.backgroundColor = Colors.blue
         
+        var label: UILabel = UILabel(frame: view.frame)
+        label.textColor = Colors.white
+        label.font = UIFont(name: "HelveticaNeue-Thin", size: 170.0)
+        label.textAlignment = .center
+        label.text = "S"
+        label.transform = label.transform.scaledBy(x: 0.25, y: 0.25)
+        view.addSubview(label)
+        
+        UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
+            label.transform = label.transform.scaledBy(x: 4, y: 4)
+        }) { (finished) in
+            print("Finished with Animation")
+        }
     }
     
     @IBOutlet weak var barsView: UIImageView!
