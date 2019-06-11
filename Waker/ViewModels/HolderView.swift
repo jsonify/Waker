@@ -14,8 +14,17 @@ protocol HolderViewDelegate:class {
 
 class HolderView: UIView {
     let preWakeDuration = 10.0
-    let redRectangleLayer = RectangleLayer()
-    let blueRectangleLayer = RectangleLayer()
+    
+    let redCircleLayer = CircleLayer()
+    let purpleCircleLayer = CircleLayer()
+    let blueCircleLayer = CircleLayer()
+    let cyanCircleLayer = CircleLayer()
+    let greenCircleLayer = CircleLayer()
+    let yellowCircleLayer = CircleLayer()
+    let orangeCircleLayer = CircleLayer()
+    
+    //    let redRectangleLayer = RectangleLayer()
+    //    let blueRectangleLayer = RectangleLayer()
     //    let ovalLayer = OvalLayer()
     //    let triangleLayer = TriangleLayer()
     //    let arcLayer = ArcLayer()
@@ -32,25 +41,55 @@ class HolderView: UIView {
         super.init(coder: coder)
     }
     
-    func drawRedAnimationRectangle() {
-        layer.addSublayer(redRectangleLayer)
-        redRectangleLayer.animateStrokeWithColor(color: Colors.red, duration: 5.0)
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawBlueAnimationRectangle), userInfo: nil, repeats: false)
+    func drawRedAnimationCircle() {
+        layer.addSublayer(redCircleLayer)
+        redCircleLayer.animateStrokeWithColor(color: Colors.red, duration: 5.0)
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawPurpleAnimationCircle), userInfo: nil, repeats: false)
+    }
+    @objc
+    func drawPurpleAnimationCircle() {
+        layer.addSublayer(purpleCircleLayer)
+        purpleCircleLayer.animateStrokeWithColor(color: UIColor.purple, duration: 5.0)
+        
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawBlueAnimationCircle), userInfo: nil, repeats: false)
     }
     
     @objc
-    func drawBlueAnimationRectangle() {
-        layer.addSublayer(blueRectangleLayer)
-        blueRectangleLayer.animateStrokeWithColor(color: Colors.blue, duration: 5.0)
+    func drawBlueAnimationCircle() {
+        layer.addSublayer(blueCircleLayer)
+        blueCircleLayer.animateStrokeWithColor(color: UIColor.blue, duration: 5.0)
+        
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawCyanAnimationCircle), userInfo: nil, repeats: false)
+    }
+    
+    @objc
+    func drawCyanAnimationCircle() {
+        layer.addSublayer(cyanCircleLayer)
+        cyanCircleLayer.animateStrokeWithColor(color: UIColor.cyan, duration: 5.0)
+        
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawGreenAnimationCircle), userInfo: nil, repeats: false)
+    }
+    
+    @objc
+    func drawGreenAnimationCircle() {
+        layer.addSublayer(greenCircleLayer)
+        greenCircleLayer.animateStrokeWithColor(color: UIColor.green, duration: 5.0)
+        
+        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawYellowAnimationCircle), userInfo: nil, repeats: false)
+    }
+    @objc
+    func drawYellowAnimationCircle() {
+        layer.addSublayer(yellowCircleLayer)
+        yellowCircleLayer.animateStrokeWithColor(color: UIColor.yellow, duration: 5.0)
         
         Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(expandView), userInfo: nil, repeats: false)
     }
     
     @objc
     func expandView() {
-        backgroundColor = Colors.blue
+        backgroundColor = UIColor.yellow
         
-        frame = CGRect(x: frame.origin.x - blueRectangleLayer.lineWidth, y: frame.origin.y - blueRectangleLayer.lineWidth, width: frame.size.width + blueRectangleLayer.lineWidth * 2, height: frame.size.height + blueRectangleLayer.lineWidth * 2)
+        frame = CGRect(x: frame.origin.x - yellowCircleLayer.lineWidth, y: frame.origin.y - yellowCircleLayer.lineWidth, width: frame.size.width + yellowCircleLayer.lineWidth * 2, height: frame.size.height + yellowCircleLayer.lineWidth * 2)
         
         layer.sublayers = nil
         

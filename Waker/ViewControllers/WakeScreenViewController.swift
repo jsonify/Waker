@@ -60,9 +60,9 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
         holderView.parentFrame = view.frame
         holderView.delegate = self
         view.addSubview(holderView)
-        holderView.drawRedAnimationRectangle()
+        holderView.drawRedAnimationCircle()
     }
-    
+    //MARK: Animation Methods
     func animateLabel() {
         holderView.removeFromSuperview()
         view.backgroundColor = Colors.blue
@@ -105,13 +105,6 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
             }
         }
     }
-    
-    func showStage() {
-        bar(at: 0)
-        //        bar(at: 1)
-        //        bar(at: 2)
-    }
-    
     
     func WakeUpTime() {
         print("Wake Up!")
