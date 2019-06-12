@@ -75,7 +75,12 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
 //            label.transform = label.transform.scaledBy(x: 2, y: 2)
         }) { (finished) in
-            print("Finished with Animation")
+            Timer.scheduledTimer(withTimeInterval: self.wakeDurationValueInterval, repeats: false, block: { (Timer) in
+                self.defaults.set(false, forKey: "hasFiredKey")
+                //                self.performSegueToReturnBack()
+                self.holderView.removeFromSuperview()
+                self.hasBeenClicked = false
+            })
         }
     }
     
@@ -105,11 +110,7 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
 //                //                self.randomlyPickCharacter()
 //
 //            }
-//            Timer.scheduledTimer(withTimeInterval: self.wakeDurationValueInterval, repeats: false, block: { (Timer) in
-//                self.defaults.set(false, forKey: "hasFiredKey")
-//                self.performSegueToReturnBack()
-//                self.hasBeenClicked = false
-//            })
+        
 //        }
     }
     
