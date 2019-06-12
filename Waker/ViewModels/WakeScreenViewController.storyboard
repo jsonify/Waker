@@ -6,7 +6,6 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14766.13"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
-        <capability name="iOS 13.0 system colors" minToolsVersion="11.0"/>
     </dependencies>
     <scenes>
         <!--Wake Screen-->
@@ -19,7 +18,6 @@
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" showsTouchWhenHighlighted="YES" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pJ7-Mc-dtu">
                                 <rect key="frame" x="0.0" y="44" width="51" height="50"/>
-                                <color key="backgroundColor" cocoaTouchSystemColor="systemRedColor"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="pJ7-Mc-dtu" secondAttribute="height" multiplier="124:121" id="di4-zD-VIl"/>
                                 </constraints>

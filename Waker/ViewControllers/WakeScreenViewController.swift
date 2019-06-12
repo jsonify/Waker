@@ -69,16 +69,18 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
         label.font = UIFont(name: "HelveticaNeue-Thin", size: 170.0)
         label.textAlignment = .center
         label.text = "Wake Up!"
+        label.numberOfLines = 0
         label.transform = label.transform.scaledBy(x: 0.25, y: 0.25)
         view.addSubview(label)
         
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
-//            label.transform = label.transform.scaledBy(x: 2, y: 2)
+            label.transform = label.transform.scaledBy(x: 2, y: 2)
         }) { (finished) in
             Timer.scheduledTimer(withTimeInterval: self.wakeDurationValueInterval, repeats: false, block: { (Timer) in
                 self.defaults.set(false, forKey: "hasFiredKey")
                 //                self.performSegueToReturnBack()
-                self.holderView.removeFromSuperview()
+                label.removeFromSuperview()
+                self.view.backgroundColor = UIColor.clear
                 self.hasBeenClicked = false
             })
         }
