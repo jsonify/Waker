@@ -101,7 +101,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vZ1-Bi-1fN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1922" y="304"/>
+            <point key="canvasLocation" x="3098" y="-564"/>
         </scene>
         <!--Waker Settings-->
         <scene sceneID="7KT-6q-cbb">
@@ -144,7 +144,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toDatePopupViewControllerSegue" id="IAc-YR-1j5"/>
+                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toDatePopupViewControllerSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="IAc-YR-1j5"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -181,7 +181,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toPreWakeTimePopupViewControllerSegue" id="H9Z-gB-jeK"/>
+                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toPreWakeTimePopupViewControllerSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="H9Z-gB-jeK"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -218,7 +218,7 @@
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         </state>
                                                         <connections>
-                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toWakeDurationPopupViewControllerSegue" id="ihj-9c-70J"/>
+                                                            <segue destination="MyZ-lw-qjJ" kind="presentation" identifier="toWakeDurationPopupViewControllerSegue" modalPresentationStyle="overCurrentContext" modalTransitionStyle="crossDissolve" id="ihj-9c-70J"/>
                                                         </connections>
                                                     </button>
                                                 </subviews>
@@ -393,7 +393,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="WakeScreenViewController" storyboardName="WakeScreenViewController" referencedIdentifier="WakeScreenViewController" id="T7c-PG-xD8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdr-Mg-aUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2940" y="199.25037481259372"/>
+            <point key="canvasLocation" x="2956" y="-111"/>
         </scene>
         <!--SettingsTableViewController-->
         <scene sceneID="flV-Uv-h4s">
@@ -409,10 +409,10 @@
                 <viewControllerPlaceholder storyboardName="ClockViewController" id="BLS-nD-G2C" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcL-cO-QyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1167" y="304"/>
+            <point key="canvasLocation" x="1126" y="-67"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
-        <segue reference="H9Z-gB-jeK"/>
+        <segue reference="ihj-9c-70J"/>
     </inferredMetricsTieBreakers>
 </document>

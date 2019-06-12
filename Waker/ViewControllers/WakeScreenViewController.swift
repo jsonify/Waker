@@ -62,7 +62,7 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
     //MARK: Animation Methods
     func animateLabel() {
         holderView.removeFromSuperview()
-        view.backgroundColor = Colors.blue
+        view.backgroundColor = Colors.green
         
         let label: UILabel = UILabel(frame: view.frame)
         label.textColor = Colors.white
@@ -73,7 +73,7 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
         view.addSubview(label)
         
         UIView.animate(withDuration: 0.4, delay: 0, usingSpringWithDamping: 0.7, initialSpringVelocity: 0.1, options: .curveEaseInOut, animations: {
-            label.transform = label.transform.scaledBy(x: 4, y: 4)
+//            label.transform = label.transform.scaledBy(x: 2, y: 2)
         }) { (finished) in
             print("Finished with Animation")
         }
@@ -85,22 +85,6 @@ class WakeScreenViewController: UIViewController, HolderViewDelegate {
             self.view.transform = CGAffineTransform(rotationAngle: CGFloat.pi)
         }
         addHolderView()
-    }
-    
-    fileprivate func bar(at position: Int) {
-        let width = view.bounds.width
-        imageView = UIImageView(frame: CGRect(x: CGFloat(width/3) * CGFloat(position), y: 0, width: width/3, height: view.bounds.height))
-        imageView.backgroundColor = UIColor.red
-        
-        view.addSubview(imageView)
-        imageView.setAnchorPoint(CGPoint(x: 0, y: 0))
-        if position == 0 {
-            UIView.animate(withDuration: 3, delay: 1, options: .curveLinear, animations: {
-                self.imageView.transform = CGAffineTransform(scaleX: 1, y: 0.001)
-            }) { (success) in
-                self.imageView.removeFromSuperview()
-            }
-        }
     }
     
     func WakeUpTime() {

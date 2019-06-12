@@ -13,7 +13,10 @@ protocol HolderViewDelegate:class {
 }
 
 class HolderView: UIView {
-    let preWakeDuration = 10.0
+    let defaults = UserDefaults.standard
+    let preWakeDurationKey = "preWakeDuration"
+    var preWakeDurationValuePiece : Double = 0
+    var wakeDurationValueInterval : TimeInterval = 0
     
     let redCircleLayer = CircleLayer()
     let purpleCircleLayer = CircleLayer()
@@ -35,6 +38,9 @@ class HolderView: UIView {
     override init(frame: CGRect) {
         super.init(frame: frame)
         backgroundColor = Colors.clear
+        if let preWakeDurationValue = defaults.object(forKey: preWakeDurationKey) as? TimeInterval {
+            preWakeDurationValuePiece = preWakeDurationValue
+        }
     }
     
     required init?(coder: NSCoder) {
@@ -43,46 +49,47 @@ class HolderView: UIView {
     
     func drawRedAnimationCircle() {
         layer.addSublayer(redCircleLayer)
-        redCircleLayer.animateStrokeWithColor(color: Colors.red, duration: 5.0)
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawPurpleAnimationCircle), userInfo: nil, repeats: false)
+        redCircleLayer.animateStrokeWithColor(color: Colors.red, duration: preWakeDurationValuePiece/7)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(drawPurpleAnimationCircle), userInfo: nil, repeats: false)
     }
+    
     @objc
     func drawPurpleAnimationCircle() {
         layer.addSublayer(purpleCircleLayer)
-        purpleCircleLayer.animateStrokeWithColor(color: UIColor.purple, duration: 5.0)
+        purpleCircleLayer.animateStrokeWithColor(color: UIColor.purple, duration: preWakeDurationValuePiece/7)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawBlueAnimationCircle), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(drawBlueAnimationCircle), userInfo: nil, repeats: false)
     }
     
     @objc
     func drawBlueAnimationCircle() {
         layer.addSublayer(blueCircleLayer)
-        blueCircleLayer.animateStrokeWithColor(color: UIColor.blue, duration: 5.0)
+        blueCircleLayer.animateStrokeWithColor(color: UIColor.blue, duration: preWakeDurationValuePiece/7)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawCyanAnimationCircle), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(drawCyanAnimationCircle), userInfo: nil, repeats: false)
     }
     
     @objc
     func drawCyanAnimationCircle() {
         layer.addSublayer(cyanCircleLayer)
-        cyanCircleLayer.animateStrokeWithColor(color: UIColor.cyan, duration: 5.0)
+        cyanCircleLayer.animateStrokeWithColor(color: UIColor.cyan, duration: preWakeDurationValuePiece/7)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawGreenAnimationCircle), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(drawGreenAnimationCircle), userInfo: nil, repeats: false)
     }
     
     @objc
     func drawGreenAnimationCircle() {
         layer.addSublayer(greenCircleLayer)
-        greenCircleLayer.animateStrokeWithColor(color: UIColor.green, duration: 5.0)
+        greenCircleLayer.animateStrokeWithColor(color: UIColor.green, duration: preWakeDurationValuePiece/7)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(drawYellowAnimationCircle), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(drawYellowAnimationCircle), userInfo: nil, repeats: false)
     }
     @objc
     func drawYellowAnimationCircle() {
         layer.addSublayer(yellowCircleLayer)
-        yellowCircleLayer.animateStrokeWithColor(color: UIColor.yellow, duration: 5.0)
+        yellowCircleLayer.animateStrokeWithColor(color: UIColor.yellow, duration: preWakeDurationValuePiece/7)
         
-        Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(expandView), userInfo: nil, repeats: false)
+        Timer.scheduledTimer(timeInterval: preWakeDurationValuePiece/7, target: self, selector: #selector(expandView), userInfo: nil, repeats: false)
     }
     
     @objc
