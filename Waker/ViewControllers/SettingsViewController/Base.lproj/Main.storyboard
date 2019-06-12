@@ -393,7 +393,7 @@
                 <viewControllerPlaceholder storyboardIdentifier="WakeScreenViewController" storyboardName="WakeScreenViewController" referencedIdentifier="WakeScreenViewController" id="T7c-PG-xD8" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="zdr-Mg-aUE" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2956" y="-111"/>
+            <point key="canvasLocation" x="2498" y="44"/>
         </scene>
         <!--SettingsTableViewController-->
         <scene sceneID="flV-Uv-h4s">

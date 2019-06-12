@@ -10,8 +10,6 @@
 		3DEDE69CADA64EC8BFCC2698 /* Pods_Waker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 70C7619E572CB711AC005BE4 /* Pods_Waker.framework */; };
 		792BD85622AE9BBA0018D428 /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85522AE9BBA0018D428 /* Colors.swift */; };
 		792BD85822AECFDB0018D428 /* HolderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85722AECFDB0018D428 /* HolderView.swift */; };
-		792BD85A22AEEAD10018D428 /* OvalLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85922AEEAD10018D428 /* OvalLayer.swift */; };
-		792BD85C22AEFB940018D428 /* TriangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85B22AEFB940018D428 /* TriangleLayer.swift */; };
 		792BD85E22AF66200018D428 /* ArcLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792BD85D22AF66200018D428 /* ArcLayer.swift */; };
 		7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7940444322ACE3FB00483F16 /* ClockViewController.storyboard */; };
 		79404A2022B002E800D02197 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79404A1F22B002E800D02197 /* CircleLayer.swift */; };
@@ -55,8 +53,6 @@
 		7902C6AFDC5628CB9C04DC87 /* Pods-Waker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Waker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Waker/Pods-Waker.debug.xcconfig"; sourceTree = "<group>"; };
 		792BD85522AE9BBA0018D428 /* Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
 		792BD85722AECFDB0018D428 /* HolderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HolderView.swift; sourceTree = "<group>"; };
-		792BD85922AEEAD10018D428 /* OvalLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OvalLayer.swift; sourceTree = "<group>"; };
-		792BD85B22AEFB940018D428 /* TriangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TriangleLayer.swift; sourceTree = "<group>"; };
 		792BD85D22AF66200018D428 /* ArcLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArcLayer.swift; sourceTree = "<group>"; };
 		7940444322ACE3FB00483F16 /* ClockViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		79404A1F22B002E800D02197 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
@@ -303,8 +299,6 @@
 				79404A1F22B002E800D02197 /* CircleLayer.swift */,
 				792BD85D22AF66200018D428 /* ArcLayer.swift */,
 				792BD85722AECFDB0018D428 /* HolderView.swift */,
-				792BD85922AEEAD10018D428 /* OvalLayer.swift */,
-				792BD85B22AEFB940018D428 /* TriangleLayer.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -471,7 +465,6 @@
 			files = (
 				965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */,
 				964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */,
-				792BD85C22AEFB940018D428 /* TriangleLayer.swift in Sources */,
 				969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */,
 				79404A2022B002E800D02197 /* CircleLayer.swift in Sources */,
 				961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */,
@@ -489,7 +482,6 @@
 				96E7364920CE4E0200D992E3 /* SettingsTableViewController.swift in Sources */,
 				969B955120EBB09500973AC1 /* OnboardingView.swift in Sources */,
 				792BD85822AECFDB0018D428 /* HolderView.swift in Sources */,
-				792BD85A22AEEAD10018D428 /* OvalLayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
