@@ -18,7 +18,7 @@
             <objects>
                 <viewController modalPresentationStyle="overCurrentContext" id="MyZ-lw-qjJ" customClass="DatePopupViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="40a-tn-c5k">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8FP-I7-cVg" userLabel="Background Button">
@@ -29,7 +29,7 @@
                                 </connections>
                             </button>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Qij-86-gNL">
-                                <rect key="frame" x="47" y="181" width="281" height="305"/>
+                                <rect key="frame" x="47" y="171" width="281" height="305"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J7q-G0-Ka4">
                                         <rect key="frame" x="0.0" y="0.0" width="281" height="62"/>
@@ -108,20 +108,20 @@
             <objects>
                 <viewController title="Waker Settings" id="ZCE-SS-tmv" customClass="TimersViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNv-Xe-eMG" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="623"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="cx9-sI-909">
-                                <rect key="frame" x="0.0" y="0.0" width="377" height="628"/>
+                                <rect key="frame" x="0.0" y="0.0" width="377" height="608"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="dK3-uE-PeI">
-                                        <rect key="frame" x="0.0" y="0.0" width="377" height="500"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="377" height="480"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FHF-jj-HTd">
-                                                <rect key="frame" x="0.0" y="0.0" width="377" height="165.5"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="377" height="158.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="z1E-W5-D7g">
-                                                        <rect key="frame" x="87" y="51.5" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="48.5" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Time" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uBS-7j-dE1" userLabel="Wake Up Time Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -138,7 +138,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" selected="YES" contentHorizontalAlignment="trailing" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6dk-sL-unO" userLabel="Wake Up Time Button" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
-                                                        <rect key="frame" x="0.0" y="-3" width="378" height="166"/>
+                                                        <rect key="frame" x="0.0" y="-3" width="378" height="159"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -155,10 +155,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mhc-hM-Fgs">
-                                                <rect key="frame" x="0.0" y="167.5" width="377" height="165"/>
+                                                <rect key="frame" x="0.0" y="160.5" width="377" height="159"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="m9j-e9-tb8">
-                                                        <rect key="frame" x="87" y="51.5" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="48.5" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PreWake Timer" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gwh-bQ-Kur" userLabel="PreWake Timer Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -175,7 +175,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOF-VF-UfE" userLabel="PreWak Timer Button">
-                                                        <rect key="frame" x="0.0" y="-1" width="377" height="167"/>
+                                                        <rect key="frame" x="0.0" y="-1" width="377" height="161"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -192,10 +192,10 @@
                                                 </constraints>
                                             </view>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v3U-pK-Buu">
-                                                <rect key="frame" x="0.0" y="334.5" width="377" height="165.5"/>
+                                                <rect key="frame" x="0.0" y="321.5" width="377" height="158.5"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="Pss-xj-1Tl">
-                                                        <rect key="frame" x="87" y="52" width="203" height="62"/>
+                                                        <rect key="frame" x="87" y="48" width="203" height="62"/>
                                                         <subviews>
                                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Wake Up Screen Duration" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8WS-8D-XPU" userLabel="Duration Label">
                                                                 <rect key="frame" x="0.0" y="0.0" width="203" height="17"/>
@@ -212,7 +212,7 @@
                                                         </subviews>
                                                     </stackView>
                                                     <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1vi-n7-r4O" userLabel="Duration Button">
-                                                        <rect key="frame" x="1" y="4" width="376" height="165"/>
+                                                        <rect key="frame" x="1" y="4" width="376" height="158"/>
                                                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                                         <state key="normal">
                                                             <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -234,7 +234,7 @@
                                         </constraints>
                                     </stackView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="izL-gr-HIi">
-                                        <rect key="frame" x="0.0" y="502" width="377" height="126"/>
+                                        <rect key="frame" x="0.0" y="482" width="377" height="126"/>
                                         <subviews>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="URI-9A-O2x">
                                                 <rect key="frame" x="0.0" y="0.0" width="377" height="62"/>
@@ -344,6 +344,49 @@
             </objects>
             <point key="canvasLocation" x="274" y="-534"/>
         </scene>
+        <!--Onboarding View Controller-->
+        <scene sceneID="7Pb-3K-XM5">
+            <objects>
+                <viewController storyboardIdentifier="Onboarding" id="3HH-sp-VBN" customClass="OnboardingViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qp6-kM-0tD">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qxy-m4-q6n" customClass="OnboardingView" customModule="Waker" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="-20" width="375" height="687"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                            <button opaque="NO" alpha="0.0" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="67V-uk-kNK">
+                                <rect key="frame" x="134" y="500" width="120" height="32"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="Ubuntu-Regular" family="Ubuntu" pointSize="17"/>
+                                <state key="normal" title="SKIP TUTORIAL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="gotStartedButton:" destination="3HH-sp-VBN" eventType="touchUpInside" id="Fjk-n8-z9G"/>
+                                    <segue destination="6TH-TF-gsO" kind="show" id="5FE-k7-gJ1"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="qxy-m4-q6n" firstAttribute="leading" secondItem="jYH-Gc-8bE" secondAttribute="leading" id="A0r-Kq-dzd"/>
+                            <constraint firstItem="jYH-Gc-8bE" firstAttribute="trailing" secondItem="qxy-m4-q6n" secondAttribute="trailing" id="B8d-k0-d4h"/>
+                            <constraint firstItem="jYH-Gc-8bE" firstAttribute="bottom" secondItem="qxy-m4-q6n" secondAttribute="bottom" id="F54-Z8-Cye"/>
+                            <constraint firstItem="jYH-Gc-8bE" firstAttribute="top" secondItem="qxy-m4-q6n" secondAttribute="top" constant="20" id="nxe-F7-9x1"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="jYH-Gc-8bE"/>
+                    </view>
+                    <connections>
+                        <outlet property="getStartedButton" destination="67V-uk-kNK" id="WQJ-Ow-FFb"/>
+                        <outlet property="onboardingView" destination="qxy-m4-q6n" id="u6O-fi-ghc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xHq-Bx-fp5" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="273" y="-1340"/>
+        </scene>
         <!--WakeScreenViewController-->
         <scene sceneID="Tkx-Fn-xVT">
             <objects>
@@ -367,14 +410,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jcL-cO-QyW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1126" y="-67"/>
-        </scene>
-        <!--Onboarding-->
-        <scene sceneID="lmm-MQ-gO9">
-            <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Onboarding" storyboardName="OnboardingViewController" referencedIdentifier="Onboarding" id="eXO-ZE-kaS" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="2RO-kf-WDL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1126" y="-962"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>

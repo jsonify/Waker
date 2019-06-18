@@ -21,32 +21,32 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
        
-        window = UIWindow(frame: UIScreen.main.bounds)
-        
-        let sb = UIStoryboard(name: "Main", bundle: nil)
-        var initialViewController = sb.instantiateViewController(withIdentifier: "Onboarding")
-        
-        let defaults = UserDefaults.standard
-        
-        if defaults.bool(forKey: "onboardingComplete") {
-            initialViewController = sb.instantiateViewController(withIdentifier: "Mainapp")
-        }
-        
-        window?.rootViewController = initialViewController
-        window?.makeKeyAndVisible()
-        
-        let launchedBefore = defaults.bool(forKey: "launchedBefore")
-        if !launchedBefore
-        {
-            print("First launch")
-            UserDefaults.standard.set(true, forKey: "launchedBefore")
-            let preWakeDuration: TimeInterval = 60
-            let wakeUpTimeValue: Date = Date()
-            let wakeDurationValue: TimeInterval = 60
-            defaults.set(preWakeDuration, forKey: preWakeDurationKey)
-            defaults.set(wakeUpTimeValue, forKey: wakeUpTimeKey)
-            defaults.set(wakeDurationValue, forKey: wakeDurationKey)
-        }
+//        window = UIWindow(frame: UIScreen.main.bounds)
+//        
+//        let sb = UIStoryboard(name: "Main", bundle: nil)
+//        var initialViewController = sb.instantiateViewController(withIdentifier: "Onboarding")
+//        
+//        let defaults = UserDefaults.standard
+//        
+//        if defaults.bool(forKey: "onboardingComplete") {
+//            initialViewController = sb.instantiateViewController(withIdentifier: "Mainapp")
+//        }
+//        
+//        window?.rootViewController = initialViewController
+//        window?.makeKeyAndVisible()
+//        
+//        let launchedBefore = defaults.bool(forKey: "launchedBefore")
+//        if !launchedBefore
+//        {
+//            print("First launch")
+//            UserDefaults.standard.set(true, forKey: "launchedBefore")
+//            let preWakeDuration: TimeInterval = 60
+//            let wakeUpTimeValue: Date = Date()
+//            let wakeDurationValue: TimeInterval = 60
+//            defaults.set(preWakeDuration, forKey: preWakeDurationKey)
+//            defaults.set(wakeUpTimeValue, forKey: wakeUpTimeKey)
+//            defaults.set(wakeDurationValue, forKey: wakeDurationKey)
+//        }
        
         return true
     }

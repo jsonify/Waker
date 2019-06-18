@@ -15,6 +15,7 @@
 		79404A2022B002E800D02197 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79404A1F22B002E800D02197 /* CircleLayer.swift */; };
 		79C8B95822B8AEF000DFAB28 /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8B95622B8AEF000DFAB28 /* Data.swift */; };
 		79C8B95922B8AEF000DFAB28 /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79C8B95722B8AEF000DFAB28 /* RectangleLayer.swift */; };
+		79C8B95C22B8B3F000DFAB28 /* OnboardingViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 79C8B95A22B8B3F000DFAB28 /* OnboardingViewController.storyboard */; };
 		79E2518322B89B7D0048D48C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518222B89B7D0048D48C /* TimerModel.swift */; };
 		79E2518522B89BA60048D48C /* TimerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518422B89BA50048D48C /* TimerFunctions.swift */; };
 		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
@@ -61,6 +62,7 @@
 		79404A1F22B002E800D02197 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
 		79C8B95622B8AEF000DFAB28 /* Data.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Data.swift; path = Waker/Model/Data.swift; sourceTree = SOURCE_ROOT; };
 		79C8B95722B8AEF000DFAB28 /* RectangleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = RectangleLayer.swift; path = Waker/Model/RectangleLayer.swift; sourceTree = SOURCE_ROOT; };
+		79C8B95B22B8B3F000DFAB28 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Waker/ViewControllers/TimersViewController/Base.lproj/OnboardingViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		79E2518222B89B7D0048D48C /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = SOURCE_ROOT; };
 		79E2518422B89BA50048D48C /* TimerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFunctions.swift; sourceTree = "<group>"; };
 		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
@@ -139,6 +141,7 @@
 		7945CC4F22ACE5B600043FDF /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				79C8B95A22B8B3F000DFAB28 /* OnboardingViewController.storyboard */,
 				969B955020EBB09500973AC1 /* OnboardingView.swift */,
 				969B955220EBB17900973AC1 /* OnboardingViewController.swift */,
 			);
@@ -409,6 +412,7 @@
 				9697E85F20DF6CFC00154925 /* OFL.txt in Resources */,
 				9697E86720DF6CFC00154925 /* Ubuntu-Italic.ttf in Resources */,
 				96826DC322A8DA6700D846B1 /* WakeScreenViewController.storyboard in Resources */,
+				79C8B95C22B8B3F000DFAB28 /* OnboardingViewController.storyboard in Resources */,
 				96826E0B22AC79FB00D846B1 /* SettingsTableViewController.storyboard in Resources */,
 				9687A73F20C11370009469D5 /* rain.mp3 in Resources */,
 				7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */,
@@ -516,6 +520,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		79C8B95A22B8B3F000DFAB28 /* OnboardingViewController.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				79C8B95B22B8B3F000DFAB28 /* Base */,
+			);
+			name = OnboardingViewController.storyboard;
+			sourceTree = "<group>";
+		};
 		965F078F20A15ECA0044BB85 /* TimersViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
