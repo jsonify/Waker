@@ -14,6 +14,8 @@
 		7940444422ACE3FB00483F16 /* ClockViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7940444322ACE3FB00483F16 /* ClockViewController.storyboard */; };
 		79404A2022B002E800D02197 /* CircleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79404A1F22B002E800D02197 /* CircleLayer.swift */; };
 		7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945CC5122AD462000043FDF /* RectangleLayer.swift */; };
+		79E2518322B89B7D0048D48C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518222B89B7D0048D48C /* TimerModel.swift */; };
+		79E2518522B89BA60048D48C /* TimerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518422B89BA50048D48C /* TimerFunctions.swift */; };
 		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
 		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
 		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
@@ -57,6 +59,8 @@
 		7940444322ACE3FB00483F16 /* ClockViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ClockViewController.storyboard; sourceTree = SOURCE_ROOT; };
 		79404A1F22B002E800D02197 /* CircleLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CircleLayer.swift; sourceTree = "<group>"; };
 		7945CC5122AD462000043FDF /* RectangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
+		79E2518222B89B7D0048D48C /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = SOURCE_ROOT; };
+		79E2518422B89BA50048D48C /* TimerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFunctions.swift; sourceTree = "<group>"; };
 		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		963346F020BB63BD00EEC072 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -145,6 +149,15 @@
 				963346F020BB63BD00EEC072 /* DatePopupViewController.swift */,
 			);
 			path = DatePopupViewController;
+			sourceTree = "<group>";
+		};
+		79E2518122B89B580048D48C /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				79E2518222B89B7D0048D48C /* TimerModel.swift */,
+				79E2518422B89BA50048D48C /* TimerFunctions.swift */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		964917CC20DAFE7900A8D7B3 /* IBDesignables */ = {
@@ -294,6 +307,7 @@
 		969E86D420F1DF2A00454C83 /* ViewModels */ = {
 			isa = PBXGroup;
 			children = (
+				79E2518122B89B580048D48C /* Timer */,
 				969E86D520F1DF4300454C83 /* UserViewModel.swift */,
 				7945CC5122AD462000043FDF /* RectangleLayer.swift */,
 				79404A1F22B002E800D02197 /* CircleLayer.swift */,
@@ -466,6 +480,8 @@
 				965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */,
 				964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */,
 				969E63A620BD178300E0F487 /* WakeScreenViewController.swift in Sources */,
+				79E2518322B89B7D0048D48C /* TimerModel.swift in Sources */,
+				79E2518522B89BA60048D48C /* TimerFunctions.swift in Sources */,
 				79404A2022B002E800D02197 /* CircleLayer.swift in Sources */,
 				961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */,
 				965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */,
