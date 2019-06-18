@@ -21,10 +21,10 @@
 		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
 		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
 		965F078C20A15ECA0044BB85 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F078B20A15ECA0044BB85 /* AppDelegate.swift */; };
-		965F079120A15ECA0044BB85 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F078F20A15ECA0044BB85 /* Main.storyboard */; };
+		965F079120A15ECA0044BB85 /* TimersViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F078F20A15ECA0044BB85 /* TimersViewController.storyboard */; };
 		965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 965F079220A15ECC0044BB85 /* Assets.xcassets */; };
 		965F079620A15ECC0044BB85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */; };
-		965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079D20A172CD0044BB85 /* SettingsViewController.swift */; };
+		965F079E20A172CD0044BB85 /* TimersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079D20A172CD0044BB85 /* TimersViewController.swift */; };
 		965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 965F079F20A3362C0044BB85 /* ClockViewController.swift */; };
 		9663A13F20E7C30700382C0F /* Emitter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9663A13E20E7C30700382C0F /* Emitter.swift */; };
 		96826DC322A8DA6700D846B1 /* WakeScreenViewController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 96826DC222A8DA6700D846B1 /* WakeScreenViewController.storyboard */; };
@@ -68,11 +68,11 @@
 		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
 		965F078820A15ECA0044BB85 /* Waker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Waker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		965F078B20A15ECA0044BB85 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		965F079020A15ECA0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		965F079020A15ECA0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/TimersViewController.storyboard; sourceTree = "<group>"; };
 		965F079220A15ECC0044BB85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		965F079520A15ECC0044BB85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		965F079720A15ECC0044BB85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		965F079D20A172CD0044BB85 /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		965F079D20A172CD0044BB85 /* TimersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimersViewController.swift; sourceTree = "<group>"; };
 		965F079F20A3362C0044BB85 /* ClockViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ClockViewController.swift; sourceTree = "<group>"; };
 		9663A13E20E7C30700382C0F /* Emitter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emitter.swift; sourceTree = "<group>"; };
 		96826DC222A8DA6700D846B1 /* WakeScreenViewController.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = WakeScreenViewController.storyboard; path = ../../ViewModels/WakeScreenViewController.storyboard; sourceTree = "<group>"; };
@@ -127,13 +127,13 @@
 			path = ClockViewController;
 			sourceTree = "<group>";
 		};
-		7945CC4E22ACE58400043FDF /* SettingsViewController */ = {
+		7945CC4E22ACE58400043FDF /* TimersViewController */ = {
 			isa = PBXGroup;
 			children = (
-				965F079D20A172CD0044BB85 /* SettingsViewController.swift */,
-				965F078F20A15ECA0044BB85 /* Main.storyboard */,
+				965F079D20A172CD0044BB85 /* TimersViewController.swift */,
+				965F078F20A15ECA0044BB85 /* TimersViewController.storyboard */,
 			);
-			path = SettingsViewController;
+			path = TimersViewController;
 			sourceTree = "<group>";
 		};
 		7945CC4F22ACE5B600043FDF /* Onboarding */ = {
@@ -229,7 +229,7 @@
 			isa = PBXGroup;
 			children = (
 				7945CC5022ACE80E00043FDF /* DatePopupViewController */,
-				7945CC4E22ACE58400043FDF /* SettingsViewController */,
+				7945CC4E22ACE58400043FDF /* TimersViewController */,
 				7940444222ACE3D600483F16 /* ClockViewController */,
 				96826E0922AC79D400D846B1 /* SettingsTableViewController */,
 				96826E0C22ACDC3900D846B1 /* WakeScreenViewController */,
@@ -410,7 +410,7 @@
 				965F079320A15ECC0044BB85 /* Assets.xcassets in Resources */,
 				9697E86320DF6CFC00154925 /* Ubuntu-Regular.ttf in Resources */,
 				9697E86620DF6CFC00154925 /* Ubuntu-BoldItalic.ttf in Resources */,
-				965F079120A15ECA0044BB85 /* Main.storyboard in Resources */,
+				965F079120A15ECA0044BB85 /* TimersViewController.storyboard in Resources */,
 				9697E86020DF6CFC00154925 /* VarelaRound-Regular.ttf in Resources */,
 				9697E86520DF6CFC00154925 /* Ubuntu-MediumItalic.ttf in Resources */,
 			);
@@ -487,7 +487,7 @@
 				79E2518522B89BA60048D48C /* TimerFunctions.swift in Sources */,
 				79404A2022B002E800D02197 /* CircleLayer.swift in Sources */,
 				961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */,
-				965F079E20A172CD0044BB85 /* SettingsViewController.swift in Sources */,
+				965F079E20A172CD0044BB85 /* TimersViewController.swift in Sources */,
 				7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */,
 				969E86D620F1DF4300454C83 /* UserViewModel.swift in Sources */,
 				96826DE422A9B95900D846B1 /* UIViewExtension.swift in Sources */,
@@ -508,12 +508,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		965F078F20A15ECA0044BB85 /* Main.storyboard */ = {
+		965F078F20A15ECA0044BB85 /* TimersViewController.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				965F079020A15ECA0044BB85 /* Base */,
 			);
-			name = Main.storyboard;
+			name = TimersViewController.storyboard;
 			sourceTree = "<group>";
 		};
 		965F079420A15ECC0044BB85 /* LaunchScreen.storyboard */ = {

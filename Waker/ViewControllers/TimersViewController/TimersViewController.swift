@@ -9,7 +9,7 @@
 import UIKit
 
 
-class SettingsViewController: UIViewController {
+class TimersViewController: UIViewController {
     
     @IBOutlet weak var timeLabel: UILabel!
     @IBOutlet weak var preWakeTimeLabel: UILabel!

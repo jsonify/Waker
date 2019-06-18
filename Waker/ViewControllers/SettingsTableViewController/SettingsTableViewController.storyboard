@@ -249,7 +249,7 @@
         <!--Onboarding-->
         <scene sceneID="cjJ-3K-Bct">
             <objects>
-                <viewControllerPlaceholder storyboardIdentifier="Onboarding" storyboardName="Main" referencedIdentifier="Onboarding" id="fQB-sg-vYd" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardIdentifier="Onboarding" storyboardName="TimersViewController" referencedIdentifier="Onboarding" id="fQB-sg-vYd" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fHy-0u-fsy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1989" y="-927"/>

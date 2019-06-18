@@ -106,7 +106,7 @@
         <!--Waker Settings-->
         <scene sceneID="7KT-6q-cbb">
             <objects>
-                <viewController title="Waker Settings" id="ZCE-SS-tmv" customClass="SettingsViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController title="Waker Settings" id="ZCE-SS-tmv" customClass="TimersViewController" customModule="Waker" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XNv-Xe-eMG" customClass="DesignableButton" customModule="Waker" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="603"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
