@@ -16,6 +16,7 @@
 		7945CC5222AD462000043FDF /* RectangleLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7945CC5122AD462000043FDF /* RectangleLayer.swift */; };
 		79E2518322B89B7D0048D48C /* TimerModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518222B89B7D0048D48C /* TimerModel.swift */; };
 		79E2518522B89BA60048D48C /* TimerFunctions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518422B89BA50048D48C /* TimerFunctions.swift */; };
+		79E2518722B89FCD0048D48C /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79E2518622B89FCD0048D48C /* Data.swift */; };
 		961CDEB020E351E50093158D /* NavigationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 961CDEAF20E351E50093158D /* NavigationViewController.swift */; };
 		963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 963346F020BB63BD00EEC072 /* DatePopupViewController.swift */; };
 		964917CE20DAFEC400A8D7B3 /* DesignableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */; };
@@ -61,6 +62,7 @@
 		7945CC5122AD462000043FDF /* RectangleLayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RectangleLayer.swift; sourceTree = "<group>"; };
 		79E2518222B89B7D0048D48C /* TimerModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerModel.swift; sourceTree = SOURCE_ROOT; };
 		79E2518422B89BA50048D48C /* TimerFunctions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimerFunctions.swift; sourceTree = "<group>"; };
+		79E2518622B89FCD0048D48C /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 		961CDEAF20E351E50093158D /* NavigationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NavigationViewController.swift; sourceTree = "<group>"; };
 		963346F020BB63BD00EEC072 /* DatePopupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatePopupViewController.swift; sourceTree = "<group>"; };
 		964917CD20DAFEC400A8D7B3 /* DesignableButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableButton.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				79404A1F22B002E800D02197 /* CircleLayer.swift */,
 				792BD85D22AF66200018D428 /* ArcLayer.swift */,
 				792BD85722AECFDB0018D428 /* HolderView.swift */,
+				79E2518622B89FCD0048D48C /* Data.swift */,
 			);
 			path = ViewModels;
 			sourceTree = "<group>";
@@ -492,6 +495,7 @@
 				792BD85622AE9BBA0018D428 /* Colors.swift in Sources */,
 				965F07A020A3362C0044BB85 /* ClockViewController.swift in Sources */,
 				792BD85E22AF66200018D428 /* ArcLayer.swift in Sources */,
+				79E2518722B89FCD0048D48C /* Data.swift in Sources */,
 				969B955320EBB17900973AC1 /* OnboardingViewController.swift in Sources */,
 				963346F120BB63BD00EEC072 /* DatePopupViewController.swift in Sources */,
 				9663A13F20E7C30700382C0F /* Emitter.swift in Sources */,

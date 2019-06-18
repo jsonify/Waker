@@ -14,7 +14,11 @@ class TimerFunctions {
     }
     
     static func readTimers() {
-        
+        if Data.timerModels.count == 0 {
+            Data.timerModels.append(TimerModel(title: "7:00 am"))
+            Data.timerModels.append(TimerModel(title: "10:00 am"))
+            Data.timerModels.append(TimerModel(title: "3:30 pm"))
+        } 
     }
     
     static func updateTimer(timerModel: TimerModel) {
